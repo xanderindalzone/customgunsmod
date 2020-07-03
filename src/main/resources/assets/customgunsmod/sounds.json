@@ -1,0 +1,18 @@
+{
+  "shot_colt1911": {
+    "category": "block",
+    "sounds": [ "customgunsmod:shot_colt1911" ]
+  },
+  "reload_colt1911": {
+    "category": "block",
+    "sounds": [ "customgunsmod:reload_colt1911" ]
+  },
+  "reload_colt1911_cock": {
+    "category": "block",
+    "sounds": [ "customgunsmod:reload_colt1911_cock" ]
+  },
+  "no_ammo_click": {
+    "category": "block",
+    "sounds": [ "customgunsmod:no_ammo_click" ]
+  }
+}

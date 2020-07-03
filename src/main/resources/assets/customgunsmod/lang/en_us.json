@@ -1,0 +1,18 @@
+{
+    //CREATIVE_TABS
+    "itemGroup.guns": "Guns",
+	"itemGroup.ammo": "Ammo",
+	"itemGroup.custom_blocks": "Custom Blocks",
+    
+    //ITEMS
+    "item.customgunsmod.pistol_colt_1911": "Colt 1911",
+    "item.customgunsmod.bullet_cal_45": "Cal .45 Bullet",
+    
+    //BLOCKS
+    "block.customgunsmod.armored_glass_block": "Armored Glass",
+    
+    
+    //KEYS_BINDINGS
+    "key.categories.customgunsmod": "Custom Gun Keys",
+    "key.reload": "Reload Gun"
+}

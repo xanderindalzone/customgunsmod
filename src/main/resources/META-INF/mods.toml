@@ -1,0 +1,96 @@
+# This is an example mods.toml file. It contains the data relating to the loading mods.
+# There are several mandatory fields (#mandatory), and many more that are optional (#optional).
+# The overall format is standard TOML format, v0.5.0.
+# Note that there are a couple of TOML lists in this file.
+# Find more information on toml format here:  https://github.com/toml-lang/toml
+
+
+
+
+
+
+
+
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+#mandatory
+modLoader="javafml"
+
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+#mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[31,)"
+
+# A URL to refer people to when problems occur with this mod
+issueTrackerURL="https://discord.gg/v5KX9ft" #optional
+
+# A list of mods - how many allowed here is determined by the individual mod loader
+#mandatory
+[[mods]]
+
+# The modid of the mod
+#mandatory
+modId="customgunsmod"
+
+# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
+#mandatory
+version="1.0"
+
+# A display name for the mod
+#mandatory
+displayName="Custom Guns Mod"
+
+# A URL to query for updates for this mod. See the JSON update specification <here>
+#optional
+updateJSONURL="http://example.com/"
+
+# A URL for the "homepage" for this mod, displayed in the mod UI
+#optional
+displayURL="https://discord.gg/v5KX9ft"
+
+# A file name (in the root of the mod JAR) containing a logo for display
+#optional
+logoFile="example.png"
+
+# A text field displayed in the mod UI
+#optional
+credits="Thanks to TurtyWurty for the tutorial"
+
+# A text field displayed in the mod UI
+#optional
+authors="xanderindalzone"
+
+# The description text for the mod (multi line!)
+#mandatory
+description='''
+Create custom guns from many shooter games and fight with multiple new enemies.
+'''
+
+
+
+
+
+
+
+
+
+
+
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.customgunsmod]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[31,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+
+# Here's another dependency
+[[dependencies.customgunsmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
