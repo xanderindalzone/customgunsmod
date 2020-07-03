@@ -12,14 +12,17 @@
 <mapEntry key="MCP_MAPPINGS" value="snapshot_20200514-1.15.1"/>
 <mapEntry key="MCP_VERSION" value="20200515.085601"/>
 <mapEntry key="MC_VERSION" value="1.15.2"/>
-<mapEntry key="MOD_CLASSES" value="examplemod%%C:\Users\alexs\Desktop\ESCRITORIO DE XANDER\01_ECLIPSE_MINECRAFT_MOD_WORKSPACE\CustomGunsMod1.15.2\bin\main;examplemod%%C:\Users\alexs\Desktop\ESCRITORIO DE XANDER\01_ECLIPSE_MINECRAFT_MOD_WORKSPACE\CustomGunsMod1.15.2\bin\main"/>
+<mapEntry key="MOD_CLASSES" value="examplemod%%C:\Users\alexs\Desktop\ESCRITORIO DE XANDER\01_ECLIPSE_MINECRAFT_MOD_WORKSPACE\CustomGunsMod1.15.2\customgunsmod\bin\main;examplemod%%C:\Users\alexs\Desktop\ESCRITORIO DE XANDER\01_ECLIPSE_MINECRAFT_MOD_WORKSPACE\CustomGunsMod1.15.2\customgunsmod\bin\main"/>
 <mapEntry key="assetDirectory" value="C:\Users\alexs\.gradle\caches\forge_gradle\assets"/>
 <mapEntry key="assetIndex" value="1.15"/>
-<mapEntry key="nativesDirectory" value="C:\Users\alexs\Desktop\ESCRITORIO DE XANDER\01_ECLIPSE_MINECRAFT_MOD_WORKSPACE\CustomGunsMod1.15.2\build\natives"/>
+<mapEntry key="nativesDirectory" value="C:\Users\alexs\Desktop\ESCRITORIO DE XANDER\01_ECLIPSE_MINECRAFT_MOD_WORKSPACE\CustomGunsMod1.15.2\customgunsmod\build\natives"/>
 <mapEntry key="target" value="fmluserdevclient"/>
 </mapAttribute>
+<booleanAttribute key="org.eclipse.jdt.debug.ui.CONSIDER_INHERITED_MAIN" value="true"/>
+<booleanAttribute key="org.eclipse.jdt.debug.ui.INCLUDE_EXTERNAL_JARS" value="true"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.minecraftforge.userdev.LaunchTesting"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="CustomGunsMod1.15.2"/>
+<booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="true"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=SCAN,REGISTRIES,REGISTRYDUMP -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump &quot;-Dos.name=Windows 10&quot; -Dos.version=10.0"/>
-<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\alexs\Desktop\ESCRITORIO DE XANDER\01_ECLIPSE_MINECRAFT_MOD_WORKSPACE\CustomGunsMod1.15.2\run"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\alexs\Desktop\ESCRITORIO DE XANDER\01_ECLIPSE_MINECRAFT_MOD_WORKSPACE\CustomGunsMod1.15.2\customgunsmod\run"/>
 </launchConfiguration>
