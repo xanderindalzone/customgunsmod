@@ -88,10 +88,6 @@ public class CustomGunsMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        // some preinit code
-    	LOGGER.info("======================");
-        LOGGER.info("Loading CustomGunsMod!");
-    	LOGGER.info("======================");
     	
     	//Renderiza este bloque con textura trasnparente
     	RenderTypeLookup.setRenderLayer(Init.ARMORED_GLASS_BLOCK, RenderType.getCutoutMipped());
