@@ -3,11 +3,14 @@ package com.xanderindalzone.customgunsmod.events;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.xanderindalzone.customgunsmod.CustomGunsMod;
+import com.xanderindalzone.customgunsmod.init.Init;
 import com.xanderindalzone.customgunsmod.objects.items.guns.GunBase;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.entity.PlayerRenderer;
 import net.minecraft.client.renderer.entity.model.PlayerModel;
 import net.minecraft.client.renderer.entity.model.BipedModel.ArmPose;
@@ -58,7 +61,7 @@ public class ClientGunEvents
 	@SubscribeEvent		
 	public static void renderHeldGun(RenderPlayerEvent.Pre event)
 	{
-		
+
 		
 		PlayerEntity player = event.getPlayer();
 		PlayerRenderer render = event.getRenderer();
