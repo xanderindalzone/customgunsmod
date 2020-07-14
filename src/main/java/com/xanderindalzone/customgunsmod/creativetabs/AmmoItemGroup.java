@@ -1,6 +1,6 @@
 package com.xanderindalzone.customgunsmod.creativetabs;
 
-import com.xanderindalzone.customgunsmod.init.Init;
+import com.xanderindalzone.customgunsmod.init.InitItems;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -16,7 +16,7 @@ public class AmmoItemGroup extends ItemGroup
 	@Override
 	public ItemStack createIcon() 
 	{
-		return new ItemStack(Init.BULLET_CAL_45);
+		return new ItemStack(InitItems.BULLET_CAL_45.get()); //Init.BULLET_CAL_45 OLD
 	}
 
 }

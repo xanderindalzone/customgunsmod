@@ -14,8 +14,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.xanderindalzone.customgunsmod.CustomGunsMod;
-import com.xanderindalzone.customgunsmod.init.Init;
-import com.xanderindalzone.customgunsmod.objects.items.guns.GunBase;
+import com.xanderindalzone.customgunsmod.objects.items.guns.Gun;
 
 import io.netty.util.internal.ReflectionUtil;
 import net.minecraft.block.Block;

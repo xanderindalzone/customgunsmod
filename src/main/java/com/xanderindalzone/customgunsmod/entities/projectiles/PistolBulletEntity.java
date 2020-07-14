@@ -1,6 +1,6 @@
 package com.xanderindalzone.customgunsmod.entities.projectiles;
 
-import com.xanderindalzone.customgunsmod.init.Init;
+import com.xanderindalzone.customgunsmod.init.InitItems;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -15,7 +15,6 @@ import net.minecraftforge.fml.network.NetworkHooks;
 
 public class PistolBulletEntity extends AbstractArrowEntity 
 {
-	public static final String BULLET_ID = "bullet_cal_45_entity";
 	
 	
 	//HIT BOOLEANS
@@ -54,7 +53,7 @@ public class PistolBulletEntity extends AbstractArrowEntity
 	
 	@Override
 	protected ItemStack getArrowStack() {
-		return new ItemStack(Init.BULLET_CAL_45);
+		return new ItemStack(InitItems.BULLET_CAL_45.get()); //Init.BULLET_CAL_45 OLD
 	}
 	
 //==========================================================================================================

@@ -1,6 +1,6 @@
 package com.xanderindalzone.customgunsmod.creativetabs;
 
-import com.xanderindalzone.customgunsmod.init.Init;
+import com.xanderindalzone.customgunsmod.init.InitBlocks;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
@@ -16,7 +16,7 @@ public class CustomBlocksItemGroup extends ItemGroup{
 	@Override
 	public ItemStack createIcon() 
 	{
-		return new ItemStack(Init.ARMORED_GLASS_BLOCK);
+		return new ItemStack(InitBlocks.ARMORED_GLASS_BLOCK.get());
 	}
 	
 	

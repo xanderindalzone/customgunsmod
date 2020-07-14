@@ -5,6 +5,7 @@ import java.rmi.registry.RegistryHandler;
 
 import com.xanderindalzone.customgunsmod.CustomGunsMod;
 import com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity;
+import com.xanderindalzone.customgunsmod.init.InitEntities;
 
 import net.minecraft.client.renderer.entity.ArrowRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderer;
@@ -24,7 +25,7 @@ import net.minecraftforge.registries.RegistryManager;
 public class BulletRender extends ArrowRenderer<PistolBulletEntity>{
 	
     public final static ResourceLocation BULLET_TEXTURE_PATH = 
-    		new ResourceLocation(CustomGunsMod.MOD_ID, "textures/entity/arrows/"+PistolBulletEntity.BULLET_ID+".png");
+    		new ResourceLocation(CustomGunsMod.MOD_ID, "textures/entity/arrows/"+InitEntities.PISTOL_BULLET_ENTITY_ID+".png");
 
     public BulletRender(EntityRendererManager renderManagerIn) 
     {

@@ -1,9 +1,16 @@
 package com.xanderindalzone.customgunsmod.objects.items.guns.pistols;
 
-import com.xanderindalzone.customgunsmod.init.Init;
-import com.xanderindalzone.customgunsmod.objects.items.guns.GunBase;
+import com.xanderindalzone.customgunsmod.init.InitItems;
+import com.xanderindalzone.customgunsmod.objects.items.guns.Gun;
+import com.xanderindalzone.customgunsmod.objects.items.guns.GunTypes;
 
-public class Colt1911 extends GunBase
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.world.World;
+
+public class Colt1911 extends Gun
 {
 	
 	public static int gun_ammo_capacity=8;
@@ -11,8 +18,9 @@ public class Colt1911 extends GunBase
 	public Colt1911(Properties properties) {
 		super(properties);
 		
+		gun_type=GunTypes.PISTOL;
 		this.gun_mag=gun_ammo_capacity;
-		this.ammo_used=Init.BULLET_CAL_45;
+		this.ammo_used=InitItems.BULLET_CAL_45.get(); //Init.BULLET_CAL_45 OLD
 		this.gun_damage=4;
 		this.gun_accuracy=1;
 		this.gun_recoil=1;

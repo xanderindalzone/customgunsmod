@@ -1,5 +1,6 @@
 package com.xanderindalzone.customgunsmod.objects.blocks;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,7 +12,7 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ToolType;
 
-public class ArmoredGlassBlock extends BlockBase
+public class ArmoredGlassBlock extends Block
 {
 
 	public ArmoredGlassBlock(Properties properties) 
