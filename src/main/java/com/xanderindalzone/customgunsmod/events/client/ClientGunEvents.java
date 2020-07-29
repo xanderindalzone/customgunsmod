@@ -2,34 +2,45 @@ package com.xanderindalzone.customgunsmod.events.client;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.sun.jna.platform.unix.X11.Window;
 import com.xanderindalzone.customgunsmod.CustomGunsMod;
+import com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity;
 import com.xanderindalzone.customgunsmod.init.InitKeys;
+import com.xanderindalzone.customgunsmod.init.InitSounds;
 import com.xanderindalzone.customgunsmod.objects.items.guns.Gun;
+import com.xanderindalzone.customgunsmod.packets.PacketHandler;
+import com.xanderindalzone.customgunsmod.packets.messages.HitMarkerMessage;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.entity.PlayerRenderer;
 import net.minecraft.client.renderer.entity.model.PlayerModel;
 import net.minecraft.client.renderer.entity.model.BipedModel.ArmPose;
 import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.FOVUpdateEvent;
+import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.client.event.RenderHandEvent;
 import net.minecraftforge.client.event.RenderPlayerEvent;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.event.entity.ProjectileImpactEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.minecraftforge.fml.network.NetworkDirection;
 
 @Mod.EventBusSubscriber(modid = CustomGunsMod.MOD_ID, bus = Bus.FORGE, value = Dist.CLIENT)
 public class ClientGunEvents 
 {
-
 	
 	
 	
@@ -58,9 +69,75 @@ public class ClientGunEvents
 	
 	
 	
+	/**
+	   * Draw the custom crosshairs if reqd
+	   * Otherwise, cancel the event so that the normal crosshair is drawn.
+	   * @param event
+	   */
+	  @SubscribeEvent
+	public static void AimMarker(RenderGameOverlayEvent.Pre event) {
+		PlayerEntity player = Minecraft.getInstance().player;
+		
+		
+		int width = event.getWindow().getScaledWidth();
+	    int height = event.getWindow().getScaledHeight();
+	    
+	    if (event.getType() == RenderGameOverlayEvent.ElementType.CROSSHAIRS 
+				&& player.getHeldItemMainhand().getItem() instanceof Gun) {event.setCanceled(true);}
+		
+		if (event.getType() == RenderGameOverlayEvent.ElementType.CROSSHAIRS 
+				&& player.getHeldItemMainhand().getItem() instanceof Gun 
+				&& !(Minecraft.getInstance().gameSettings.keyBindAttack.isKeyDown())) 
+		{
+			
+			
+		
+//			int yd = event.getWindow().getScaledHeight();
+//			int xd = event.getWindow().getScaledWidth();
+//			
+//			int xRightMarker=(int) (xd*0.54);
+//			int yRightMarker=(int) (yd*0.492);
+//			
+//			int xLeftMarker=(int) (xd*0.453);
+//			int yLeftMarker=(int) (yd*0.492);
+//			
+//			int xUpMarker=(int) (xd*0.50);
+//			int yUpMarker=(int) (yd*0.415);
+//			
+//			int xDownMarker=(int) (xd*0.5);
+//			int yDownMarker=(int) (yd*0.561);
+//			
+//			int xHitMarker=(int) (xd*0.497);
+//			int yHitMarker=(int) (yd*0.488);
+//
+//			
+//			Gun gun = (Gun) player.getHeldItemMainhand().getItem();
+//			FontRenderer TextRenderer = Minecraft.getInstance().fontRenderer;
+//			
+//			float modifier = (1-gun.gun_accuracy)*2;
+//			
+//			
+//			
+//			
+//			TextRenderer.drawString("-", (xRightMarker)+modifier, yRightMarker, 16777215);
+//			TextRenderer.drawString("-", (xLeftMarker)-modifier, yLeftMarker, 16777215);
+//			TextRenderer.drawString("|", xUpMarker, (yUpMarker)-modifier, 16777215);
+//			TextRenderer.drawString("|", xDownMarker, (yDownMarker)+modifier, 16777215);
+		} 
+	}
+	
+	
+	  
+	  
+	  
+	  
 	
 	
 	
+	public static void DisplayHitMarker(boolean kill) 
+	{
+		System.out.println("DEBUG HITMARKER");
+	}
 	
 	
 	

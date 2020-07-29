@@ -1,6 +1,7 @@
 package com.xanderindalzone.customgunsmod.objects.items.guns;
 
 import java.util.Random;
+import java.util.UUID;
 
 import com.google.common.collect.Multimap;
 import com.xanderindalzone.customgunsmod.CustomGunsMod;
@@ -30,16 +31,20 @@ import net.minecraft.entity.projectile.SnowballEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.BowItem;
 import net.minecraft.item.CrossbowItem;
+import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.UseAction;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraft.potion.EffectType;
+import net.minecraft.potion.Effects;
 import net.minecraft.profiler.ISnooperInfo;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.CooldownTracker;
 import net.minecraft.util.Hand;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
@@ -56,37 +61,32 @@ public class Gun extends Item
 	public GunTypes gun_type;
 	public Item ammo_used;
 	public float gun_damage;
-	public float gun_accuracy;
+	public float gun_base_accuracy;
 	public float gun_recoil;
 	public float gun_bullet_speed;
 	public int gun_firing_rate;
 	public int gun_reload_cooldown;
 	public int gun_reload_cooldown_cock;
-	public float zoom_fov;
 	public boolean gun_is_full_auto;
-	
-	//=============
-	//BROKEN CODE!! NEEDS FIXING
-	//=============
-	//Maintenance Attributes
-	protected boolean is_aiming=false;
-	protected boolean is_reloading=false;
-	//=============
-	
 
+	public float zoom_fov;
+	public double aim_sensitivity;
+
+	private static final IItemPropertyGetter AIM_PROPERTY_GETTER = (stack, world, entity) -> {
+	      return stack.hasTag()&&stack.getTag().getBoolean("gun_property_is_aiming") == true ? 1.0F : 0.0F;
+	   };
+	
+	
 	public Gun(Properties properties) {
 		super(properties);
+		
+		
+	    this.addPropertyOverride(new ResourceLocation("aiming"), AIM_PROPERTY_GETTER);
+		
 	}
 	
 	
-	
-	//=============
-	//BROKEN CODE!! NEEDS FIXING
-	//=============
-	public boolean isAiming() 
-	{
-		return this.is_aiming;
-	}
+
 	
 //==========================================================================================================
 //COMPORTAMIENTOS DEL ITEM
@@ -108,6 +108,31 @@ public class Gun extends Item
 		return multimap;
 	}
 	
+	@Override
+	public UseAction getUseAction(ItemStack stack) {
+		return UseAction.NONE;
+	}
+	
+	@Override
+	public int getUseDuration(ItemStack stack) 
+	{
+		if(this.gun_is_full_auto) {return 0;}
+		else {return 72000;}
+	}
+	
+	public void setAiming(PlayerEntity player, ItemStack gunStack, boolean value) //1 = AIMING 
+	{
+		if(value) 
+		{
+			gunStack.getTag().putBoolean("gun_property_is_aiming", true);
+		}
+		else 
+		{
+			player.abilities.setWalkSpeed(0.1F);
+			gunStack.getTag().putBoolean("gun_property_is_aiming", false);
+		}
+	}
+	
 //==========================================================================================================	
 	
 
@@ -116,6 +141,10 @@ public class Gun extends Item
 	{
 		super.onPlayerStoppedUsing(stack, worldIn, entityLiving, timeLeft);
 		//DO STUFF
+		if(entityLiving instanceof PlayerEntity) 
+		{
+			PlayerEntity playerIn = (PlayerEntity) entityLiving;
+		}
 	}
 	
 	@Override
@@ -123,6 +152,10 @@ public class Gun extends Item
 	{
 		super.onUse(worldIn, livingEntityIn, stack, count);
 		//DO STUFF WHEN USING ITEM
+		if(livingEntityIn instanceof PlayerEntity) 
+		{
+			PlayerEntity playerIn = (PlayerEntity) livingEntityIn;
+		}
 	}
 	
 	@Override
@@ -135,8 +168,11 @@ public class Gun extends Item
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
 		
-		playerIn.setActiveHand(handIn);
 		
+		playerIn.setActiveHand(handIn);
+
+//			playerIn.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.2);
+//			System.out.println(playerIn.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getValue());
 
 		
 		if(playerIn.getHeldItemMainhand().getDamage()<this.gun_mag||playerIn.isCreative()) {
@@ -155,18 +191,6 @@ public class Gun extends Item
 		return new ActionResult<ItemStack>(ActionResultType.FAIL, playerIn.getHeldItemMainhand());
 	}
 	
-	@Override
-	public UseAction getUseAction(ItemStack stack) {
-		// TODO Auto-generated method stub
-		return UseAction.NONE;
-	}
-	
-	@Override
-	public int getUseDuration(ItemStack stack) 
-	{
-		if(this.gun_is_full_auto) {return 0;}
-		else {return 72000;}
-	}
 	
 
 //===========================================================================================
@@ -179,37 +203,48 @@ public class Gun extends Item
 		double posZ = playerIn.getPosZ();
 		Vec3d look = playerIn.getLookVec();
 		World world = playerIn.getEntityWorld();
-		
-		
-		//ArrowEntity bullet = new ArrowEntity(world, 1.0D, 1.0D, 1.0D);
-		PistolBulletEntity bullet = new PistolBulletEntity(InitEntities.PISTOL_BULLET_ENTITY.get(), 1.0D, 1.0D, 1.0D, world);
-		
+			
 		//=======================================================
 		//PROPIEDADES DEL DISPARO
 		//=======================================================
-		//SPAWNEAR FOGONAZO
-		worldIn.addParticle(ParticleTypes.CLOUD, posX+(look.x*1.5D), posY+(look.y*1.5D)+1.5D, posZ+(look.z*1.5D), 0.0D, 0.5D, 0.0D);
+		PistolBulletEntity bullet = new PistolBulletEntity(InitEntities.PISTOL_BULLET_ENTITY.get(), 1.0D, 1.0D, 1.0D, world, playerIn, this.gun_damage);
 		
-		//POSICION INICIAL DE LA BALA
-		if(playerIn.rotationPitch>60) 
+//		double sneaking_accuracy=1;
+//		double walking_accuracy=1;
+//		double aiming_accuracy=1;
+
+		double accuracy=this.gun_base_accuracy*0.75;
+		
+		//CASO 1: APUNTANDO SIN CORRER
+		if((playerIn.getHeldItemMainhand().getTag().getBoolean("gun_property_is_aiming") == true)
+				&&!playerIn.isSprinting()) 
 		{
-			bullet.setPosition(posX+(look.x*1.3D), posY+(look.y*1.5D)+1.0D, posZ+(look.z*1.3D));	
+			accuracy=1;
 		}
-		else
+		//CASO 2: AGACHADO SIN APUNTAR
+		if((playerIn.isSneaking()||playerIn.isCrouching())&&(playerIn.getHeldItemMainhand().getTag().getBoolean("gun_property_is_aiming") == false)) 
 		{
-			bullet.setPosition(posX+(look.x*1.3D), posY+(look.y*1.5D)+1.3D, posZ+(look.z*1.3D));
-		}
+			accuracy=this.gun_base_accuracy;
+		}	
+		//CASO 3: SIN APUNTAR Y SIN AGACHARSE, PERO SIN CORRER
+		if((!playerIn.isSneaking()&&!playerIn.isCrouching())&&(playerIn.getHeldItemMainhand().getTag().getBoolean("gun_property_is_aiming") == false)
+				&&!playerIn.isSprinting()) 
+		{
+			accuracy=this.gun_base_accuracy*0.9;
+		}	
 		
+		double desv = (1-accuracy);
 		
-		//ESTABLECE EL DAÑO DE LA BALA
-		bullet.setBulletDamage(this.gun_damage);
-		
-		//ESTABLECE EL ALCANCE DE LA BALA
-		bullet.setVelocity(look.x*this.gun_bullet_speed, (look.y*this.gun_bullet_speed), look.z*this.gun_bullet_speed);
-		
+		double desvX = (desv-Math.random()*(desv*2));
+		double desvY = (desv-Math.random()*(desv*2));
+		double desvZ = (desv-Math.random()*(desv*2));
+				
+		//ESTABLECE EL ALCANCE DE LA BALA Y LA DESVIACION
+		bullet.setVelocity(look.x*this.gun_bullet_speed+(desvX), look.y*this.gun_bullet_speed+(desvY), look.z*this.gun_bullet_speed+(desvZ));
+				
 		//ESTABLECE LA CADENCIA DEL ARMA
 		playerIn.getCooldownTracker().setCooldown(this, this.gun_firing_rate); //TICKS - 30 TICKS = 1 seg
-		
+				
 		//ESTABLECE EL RETROCESO MAXIMO DEL DISPARO
 		float recoil_pitch = (float) -(((gun_recoil)*Math.random()));	//ES SIEMPRE NEGATIVO, SIEMPRE TENDRA RETROCESO HACIA ARRIBA
 		float recoil_yaw = (float) ((float) gun_recoil-((gun_recoil*2)*Math.random()));
@@ -217,6 +252,30 @@ public class Gun extends Item
 		playerIn.rotationYaw=playerIn.rotationYaw+recoil_yaw;
 		
 		
+		
+		double sneakModifier = 0;
+		if(playerIn.isSneaking()||playerIn.isCrouching()) {sneakModifier=0.07;}
+		double bulletXPos = posX+(look.x*1.3D);
+		double bulletYPos = posY+(look.y*1.5D)+1.6D-sneakModifier;
+		double bulletZPos = posZ+(look.z*1.3D);
+		
+		//CONFIGURA LA ALTURA DE SALIDA DE LA BALA
+		if(playerIn.rotationPitch>60) //SI ESTA MIRANDO HACIA ABAJO
+		{
+			bulletYPos = posY+(look.y*1.5D)+1.0D-sneakModifier;
+		}
+		if(playerIn.rotationPitch<-60) //SI ESTA MIRANDO HACIA ARRIBA
+		{
+			bulletYPos = posY+(look.y*1.5D)+1.3D-sneakModifier;
+		}
+		
+		
+
+		//SPAWNEAR FOGONAZO
+		worldIn.addParticle(ParticleTypes.CLOUD, bulletXPos, bulletYPos, bulletZPos, 0.0D, 0.5D, 0.0D);
+		
+		//ESTABLECER POSICION INICIAL DE LA BALA
+		bullet.setPosition(bulletXPos, bulletYPos, bulletZPos);
 
 		if(!world.isRemote)
 		{
@@ -259,7 +318,9 @@ public class Gun extends Item
 	
 	
 	
-	
+	//===========================================================================================
+	//CALLED FROM CLIENT TO SERVER METHOD
+	//===========================================================================================
 	
 	public boolean ReloadGun(World worldIn, PlayerEntity player) {
 		int ammo_left = (this.gun_mag-player.getHeldItemMainhand().getDamage());	
@@ -290,7 +351,6 @@ public class Gun extends Item
 							ammo_left=removeAmmo(player, ammo_needed, ammo_left, item, slotIndex);
 						}
 						reloadingGunSound(worldIn, player, this, cock_reload);
-						is_reloading=true;
 					}
 				}
 				return true;

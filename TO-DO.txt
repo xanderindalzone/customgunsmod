@@ -1,0 +1,13 @@
+FIXES:
+
+- Fix moving slow when holding right click with a Gun.
+
+- Bullet bugging and not disappearing on impact.
+
+- Bullet not breaking vanilla glass.
+
+
+
+TO-DO:
+
+- Gun aiming.

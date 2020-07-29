@@ -13,6 +13,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.RenderBlockOverlayEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,11 +32,15 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.glfw.GLFW;
 
+import com.xanderindalzone.customgunsmod.capabilities.entity.GunAim;
+import com.xanderindalzone.customgunsmod.capabilities.entity.IGunAim;
+import com.xanderindalzone.customgunsmod.capabilities.entity.StorageGunAim;
 import com.xanderindalzone.customgunsmod.creativetabs.AmmoItemGroup;
 import com.xanderindalzone.customgunsmod.creativetabs.CustomBlocksItemGroup;
 import com.xanderindalzone.customgunsmod.creativetabs.GunsItemGroup;
 import com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity;
 import com.xanderindalzone.customgunsmod.init.InitBlocks;
+import com.xanderindalzone.customgunsmod.init.InitCapabilities;
 import com.xanderindalzone.customgunsmod.init.InitEntities;
 import com.xanderindalzone.customgunsmod.init.InitItems;
 import com.xanderindalzone.customgunsmod.init.InitKeys;
@@ -78,6 +83,7 @@ public class CustomGunsMod
     	InitBlocks.BLOCKS.register(modEventBus);
     	InitEntities.ENTITIES.register(modEventBus);
     	InitSounds.SOUNDS.register(modEventBus);
+
     	
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -102,9 +108,12 @@ public class CustomGunsMod
     private void setup(final FMLCommonSetupEvent event)
     {
     	PacketHandler.registerPackets();
+    	InitCapabilities.registerCapabilities();
     }
     
 
+    
+    
 
     private void doClientStuff(final FMLClientSetupEvent event) 
     {

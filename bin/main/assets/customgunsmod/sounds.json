@@ -14,5 +14,21 @@
   "no_ammo_click": {
     "category": "block",
     "sounds": [ "customgunsmod:no_ammo_click" ]
+  },
+  "hit_marker": {
+    "category": "block",
+    "sounds": [ "customgunsmod:hit_marker" ]
+  },
+  "kill": {
+    "category": "block",
+    "sounds": [ "customgunsmod:kill" ]
+  },
+  "bullet_ground_impact": {
+    "category": "block",
+    "sounds": [ "customgunsmod:bullet_ground_impact" ]
+  },
+  "bullet_glass_impact": {
+    "category": "block",
+    "sounds": [ "customgunsmod:bullet_glass_impact" ]
   }
 }

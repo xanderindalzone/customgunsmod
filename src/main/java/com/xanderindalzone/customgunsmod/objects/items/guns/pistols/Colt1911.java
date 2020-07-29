@@ -22,7 +22,7 @@ public class Colt1911 extends Gun
 		this.gun_mag=gun_ammo_capacity;
 		this.ammo_used=InitItems.BULLET_CAL_45.get(); //Init.BULLET_CAL_45 OLD
 		this.gun_damage=4;
-		this.gun_accuracy=1;
+		this.gun_base_accuracy=0.9F;	//1 is max accuracy, shot will go directly where you are aiming
 		this.gun_recoil=1;
 		this.gun_bullet_speed=4; 	//1 = 7 mtrs
 		this.gun_firing_rate=4; //TICKS - 30 TICKS = 1 seg
@@ -30,7 +30,8 @@ public class Colt1911 extends Gun
 		this.gun_reload_cooldown_cock=30;
 		
 		this.gun_is_full_auto=false;
-		this.zoom_fov=40;
+		this.zoom_fov=60;
+		this.aim_sensitivity=0.4D;	//normal sensitivity is 0.5D
 	}
 
 }

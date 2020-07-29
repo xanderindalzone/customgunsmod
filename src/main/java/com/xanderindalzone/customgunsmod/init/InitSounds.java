@@ -25,8 +25,18 @@ public class InitSounds
 	public static final RegistryObject<SoundEvent> SOUND_no_ammo_click =
 			SOUNDS.register("no_ammo_click",
 					() -> new SoundEvent(new ResourceLocation(CustomGunsMod.MOD_ID, "no_ammo_click")));
-	
-	
+	public static final RegistryObject<SoundEvent> SOUND_hit_marker =
+			SOUNDS.register("hit_marker",
+					() -> new SoundEvent(new ResourceLocation(CustomGunsMod.MOD_ID, "hit_marker")));
+	public static final RegistryObject<SoundEvent> SOUND_kill =
+			SOUNDS.register("kill",
+					() -> new SoundEvent(new ResourceLocation(CustomGunsMod.MOD_ID, "kill")));
+	public static final RegistryObject<SoundEvent> SOUND_bullet_ground_impact =
+			SOUNDS.register("bullet_ground_impact",
+					() -> new SoundEvent(new ResourceLocation(CustomGunsMod.MOD_ID, "bullet_ground_impact")));
+	public static final RegistryObject<SoundEvent> SOUND_bullet_glass_impact =
+			SOUNDS.register("bullet_glass_impact",
+					() -> new SoundEvent(new ResourceLocation(CustomGunsMod.MOD_ID, "bullet_glass_impact")));
 	
 	
 	

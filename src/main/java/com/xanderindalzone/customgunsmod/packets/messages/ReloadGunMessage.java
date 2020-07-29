@@ -11,6 +11,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkDirection;
 import net.minecraftforge.fml.network.NetworkEvent;
 
+
+//MESSAGE TO SERVER
 public class ReloadGunMessage
 {
 	  

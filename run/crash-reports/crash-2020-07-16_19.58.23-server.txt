@@ -1,0 +1,60 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 16/07/20 19:58
+Description: Exception in server tick loop
+
+java.lang.IllegalStateException: Rendersystem called from wrong thread
+	at com.mojang.blaze3d.systems.RenderSystem.assertThread(RenderSystem.java:72) ~[forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.platform.GlStateManager.enableAlphaTest(GlStateManager.java:93) ~[forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.systems.RenderSystem.enableAlphaTest(RenderSystem.java:136) ~[forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.FontRenderer.drawString(FontRenderer.java:58) ~[forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at com.xanderindalzone.customgunsmod.events.client.ClientTimedEvents.Ticks(ClientTimedEvents.java:39) ~[main/:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_9_ClientTimedEvents_Ticks_TickEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80) ~[eventbus-2.2.0-service.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
+	at net.minecraftforge.fml.hooks.BasicEventHooks.onPostWorldTick(BasicEventHooks.java:99) ~[?:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:892) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:821) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:120) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:662) [?:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.15.2
+	Minecraft Version ID: 1.15.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_251, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1824379880 bytes (1739 MB) / 2224029696 bytes (2121 MB) up to 5706350592 bytes (5442 MB)
+	CPUs: 8
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 5.1.0+69+master.79f13f7
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/eventbus-2.2.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.1.1-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 31.2
+	Forge: net.minecraftforge:31.2.0
+	FML Language Providers: 
+		javafml@31.2
+		minecraft@1
+	Mod List: 
+		client-extra.jar Minecraft {minecraft@1.15.2 DONE}
+		main Custom Guns Mod {customgunsmod@1.0 DONE}
+		forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar Forge {forge@31.2.0 DONE}
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/198, l='TEST', x=-193.78, y=4.00, z=-124.57]]
+	Data Packs: vanilla, mod:customgunsmod, mod:forge (incompatible)
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

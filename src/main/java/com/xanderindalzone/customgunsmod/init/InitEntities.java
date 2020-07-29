@@ -30,7 +30,7 @@ public class InitEntities
 					.setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64)
 					.setUpdateInterval(1)
-					.size(1, 1)
+					.size(0.5F, 0.5F)
 					.build(new ResourceLocation(CustomGunsMod.MOD_ID, PISTOL_BULLET_ENTITY_ID).toString()));
 
 }
