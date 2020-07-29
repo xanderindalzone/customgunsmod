@@ -6,6 +6,7 @@ import javax.swing.text.JTextComponent.KeyBinding;
 
 import com.xanderindalzone.customgunsmod.CustomGunsMod;
 import com.xanderindalzone.customgunsmod.capabilities.entity.IGunAim;
+import com.xanderindalzone.customgunsmod.capabilities.providers.ProviderGunActions;
 import com.xanderindalzone.customgunsmod.capabilities.providers.ProviderGunAim;
 import com.xanderindalzone.customgunsmod.init.InitKeys;
 import com.xanderindalzone.customgunsmod.objects.items.guns.Gun;
@@ -88,37 +89,40 @@ public class ClientKeyEvents
 	@SubscribeEvent
 	public static void AimGun(ClientTickEvent event)
 	{
-	int is_Aiming = 0;
-	//Minecraft.getInstance().player.getCapability(ProviderGunAim.GUN_AIM_CAP).ifPresent(cap -> is_Aiming=cap.isAiming());
-	
 		
-		if(Minecraft.getInstance().gameSettings.keyBindAttack.isKeyDown()
-				&&Minecraft.getInstance().player.getHeldItemMainhand().getItem() instanceof Gun)
-		{
+		Minecraft.getInstance().player.getCapability(ProviderGunActions.GUN_ACTIONS_CAP)
+		.ifPresent(cap -> {
 			
-			Gun gun = (Gun) Minecraft.getInstance().player.getHeldItemMainhand().getItem();
+			boolean is_Aiming = cap.isAiming();
 			
-			if(is_Aiming==0) {
-				previous_FOV = Minecraft.getInstance().gameSettings.fov;
-				previous_sensitivity = Minecraft.getInstance().gameSettings.mouseSensitivity;
-				Minecraft.getInstance().gameSettings.fov=gun.zoom_fov;
-				Minecraft.getInstance().gameSettings.mouseSensitivity=gun.aim_sensitivity;
-				//is_Aiming=1;
-				Minecraft.getInstance().player.getCapability(ProviderGunAim.GUN_AIM_CAP).ifPresent(cap -> cap.setAim(1));
-				PacketHandler.channel.sendToServer(new AimGunMessage(true));
-			}
-		}
-		else
-		{
-			if(is_Aiming==1) 
+			if(Minecraft.getInstance().gameSettings.keyBindAttack.isKeyDown()
+					&&Minecraft.getInstance().player.getHeldItemMainhand().getItem() instanceof Gun)
 			{
-				Minecraft.getInstance().gameSettings.fov=previous_FOV;
-				Minecraft.getInstance().gameSettings.mouseSensitivity=previous_sensitivity;
-				//is_Aiming=0;
-				Minecraft.getInstance().player.getCapability(ProviderGunAim.GUN_AIM_CAP).ifPresent(cap -> cap.setAim(0));
-				PacketHandler.channel.sendToServer(new AimGunMessage(false));
+				
+				Gun gun = (Gun) Minecraft.getInstance().player.getHeldItemMainhand().getItem();
+				
+				if(!is_Aiming) {
+					previous_FOV = Minecraft.getInstance().gameSettings.fov;
+					previous_sensitivity = Minecraft.getInstance().gameSettings.mouseSensitivity;
+					Minecraft.getInstance().gameSettings.fov=gun.zoom_fov;
+					Minecraft.getInstance().gameSettings.mouseSensitivity=gun.aim_sensitivity;
+					cap.setAim(true);
+					PacketHandler.channel.sendToServer(new AimGunMessage(true));
+				}
 			}
-		}
+			else
+			{
+				if(is_Aiming) 
+				{
+					Minecraft.getInstance().gameSettings.fov=previous_FOV;
+					Minecraft.getInstance().gameSettings.mouseSensitivity=previous_sensitivity;
+					cap.setAim(false);
+					PacketHandler.channel.sendToServer(new AimGunMessage(false));
+				}
+			}
+			
+		});
+	
 	}
 	
 	

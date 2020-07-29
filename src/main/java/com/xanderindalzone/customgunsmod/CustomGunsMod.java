@@ -77,7 +77,6 @@ public class CustomGunsMod
 
     public CustomGunsMod() {
     	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-		modEventBus.addListener(this::setup);
 		
     	InitItems.ITEMS.register(modEventBus);
     	InitBlocks.BLOCKS.register(modEventBus);
@@ -86,9 +85,12 @@ public class CustomGunsMod
 
     	
         // Register the setup method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+    	modEventBus.addListener(this::doClientStuff);
         // Register the doClientStuff method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+    	modEventBus.addListener(this::doClientStuff);
+    	
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         //Mod Instance
