@@ -24,6 +24,7 @@ import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.client.event.RenderHandEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.TickEvent.ClientTickEvent;
+import net.minecraftforge.event.TickEvent.PlayerTickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
@@ -87,19 +88,19 @@ public class ClientKeyEvents
 	
 	
 	@SubscribeEvent
-	public static void AimGun(ClientTickEvent event)
+	public static void AimGun(PlayerTickEvent event)
 	{
-		
-		Minecraft.getInstance().player.getCapability(ProviderGunActions.GUN_ACTIONS_CAP)
+		if(event.player==null) {return;}
+		event.player.getCapability(ProviderGunActions.GUN_ACTIONS_CAP)
 		.ifPresent(cap -> {
 			
 			boolean is_Aiming = cap.isAiming();
 			
 			if(Minecraft.getInstance().gameSettings.keyBindAttack.isKeyDown()
-					&&Minecraft.getInstance().player.getHeldItemMainhand().getItem() instanceof Gun)
+					&&event.player.getHeldItemMainhand().getItem() instanceof Gun)
 			{
 				
-				Gun gun = (Gun) Minecraft.getInstance().player.getHeldItemMainhand().getItem();
+				Gun gun = (Gun) event.player.getHeldItemMainhand().getItem();
 				
 				if(!is_Aiming) {
 					previous_FOV = Minecraft.getInstance().gameSettings.fov;
