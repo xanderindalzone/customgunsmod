@@ -1,11 +1,17 @@
 package com.xanderindalzone.customgunsmod.capabilities.entity;
 
+import com.xanderindalzone.customgunsmod.init.InitItems;
+import com.xanderindalzone.customgunsmod.objects.items.guns.Gun;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+
 public class GunActions implements IGunActions
 {
 
 	private boolean is_aiming = false;
 	private double fov = 90;
-	private double previous_sensitivity = 90;
+	private double previous_sensitivity = 0.6;
 	
 	@Override
 	public void setAim(boolean is_aiming) 
@@ -42,4 +48,5 @@ public class GunActions implements IGunActions
 	{
 		return this.previous_sensitivity;
 	}
+
 }

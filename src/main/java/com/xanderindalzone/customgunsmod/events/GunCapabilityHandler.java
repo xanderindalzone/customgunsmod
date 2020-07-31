@@ -16,9 +16,6 @@ import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.xanderindalzone.customgunsmod.CustomGunsMod;
 import com.xanderindalzone.customgunsmod.capabilities.providers.ProviderGunActions;
-import com.xanderindalzone.customgunsmod.capabilities.providers.ProviderGunAim;
-import com.xanderindalzone.customgunsmod.capabilities.providers.ProviderGunFOV;
-import com.xanderindalzone.customgunsmod.capabilities.providers.ProviderGunSensitivity;
 import com.xanderindalzone.customgunsmod.objects.items.guns.Gun;
 
 import io.netty.util.internal.ReflectionUtil;
@@ -60,14 +57,7 @@ public class GunCapabilityHandler
 	 {
 		 if (event.getObject().getEntity() instanceof PlayerEntity) 
 		 {
-//			 ResourceLocation GUN_AIM_CAP = new ResourceLocation(CustomGunsMod.MOD_ID, "gun_aim");
-//			 ResourceLocation GUN_FOV_CAP = new ResourceLocation(CustomGunsMod.MOD_ID, "gun_fov");
-//			 ResourceLocation GUN_SENSITIVITY_CAP = new ResourceLocation(CustomGunsMod.MOD_ID, "gun_sensitivity");
 			 ResourceLocation GUN_ACTIONS_CAP = new ResourceLocation(CustomGunsMod.MOD_ID, "gun_actions");
-			 
-//			 event.addCapability(GUN_AIM_CAP, new ProviderGunAim());
-//			 event.addCapability(GUN_FOV_CAP, new ProviderGunFOV());
-//			 event.addCapability(GUN_SENSITIVITY_CAP, new ProviderGunSensitivity());
 			 event.addCapability(GUN_ACTIONS_CAP, new ProviderGunActions());
 		 }
 	 }

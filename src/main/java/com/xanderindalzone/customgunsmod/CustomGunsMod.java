@@ -32,9 +32,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.glfw.GLFW;
 
-import com.xanderindalzone.customgunsmod.capabilities.entity.GunAim;
-import com.xanderindalzone.customgunsmod.capabilities.entity.IGunAim;
-import com.xanderindalzone.customgunsmod.capabilities.entity.StorageGunAim;
 import com.xanderindalzone.customgunsmod.creativetabs.AmmoItemGroup;
 import com.xanderindalzone.customgunsmod.creativetabs.CustomBlocksItemGroup;
 import com.xanderindalzone.customgunsmod.creativetabs.GunsItemGroup;
@@ -86,7 +83,7 @@ public class CustomGunsMod
     	
         // Register the setup method for modloading
         //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-    	modEventBus.addListener(this::doClientStuff);
+    	modEventBus.addListener(this::setup);
         // Register the doClientStuff method for modloading
         //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
     	modEventBus.addListener(this::doClientStuff);

@@ -1,0 +1,103 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 30/07/20 23:04
+Description: Ticking player
+
+java.lang.NullPointerException: Ticking player
+	at net.minecraftforge.fml.network.simple.SimpleChannel.sendToServer(SimpleChannel.java:104) ~[forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
+	at com.xanderindalzone.customgunsmod.events.client.ClientKeyEvents.lambda$0(ClientKeyEvents.java:133) ~[main/:?] {re:classloading}
+	at net.minecraftforge.common.util.LazyOptional.ifPresent(LazyOptional.java:161) ~[forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?] {re:classloading}
+	at com.xanderindalzone.customgunsmod.events.client.ClientKeyEvents.AimGun(ClientKeyEvents.java:85) ~[main/:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_9_ClientKeyEvents_AimGun_PlayerTickEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80) ~[eventbus-2.2.0-service.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
+	at net.minecraftforge.fml.hooks.BasicEventHooks.onPlayerPreTick(BasicEventHooks.java:84) ~[?:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.tick(PlayerEntity.java:210) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.player.ServerPlayerEntity.playerTick(ServerPlayerEntity.java:379) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.network.play.ServerPlayNetHandler.tick(ServerPlayNetHandler.java:188) ~[?:?] {re:classloading}
+	at net.minecraft.network.NetworkManager.tick(NetworkManager.java:250) ~[?:?] {re:classloading}
+	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:152) ~[?:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:903) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:821) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:120) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:662) [?:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraftforge.fml.network.simple.SimpleChannel.sendToServer(SimpleChannel.java:104)
+	at com.xanderindalzone.customgunsmod.events.client.ClientKeyEvents.lambda$0(ClientKeyEvents.java:133)
+	at net.minecraftforge.common.util.LazyOptional.ifPresent(LazyOptional.java:161)
+	at com.xanderindalzone.customgunsmod.events.client.ClientKeyEvents.AimGun(ClientKeyEvents.java:85)
+	at net.minecraftforge.eventbus.ASMEventHandler_9_ClientKeyEvents_AimGun_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80)
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258)
+	at net.minecraftforge.fml.hooks.BasicEventHooks.onPlayerPreTick(BasicEventHooks.java:84)
+	at net.minecraft.entity.player.PlayerEntity.tick(PlayerEntity.java:210)
+
+-- Player being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.entity.player.ServerPlayerEntity)
+	Entity ID: 181
+	Entity Name: Dev
+	Entity's Exact location: -195.01, 4.00, -184.65
+	Entity's Block location: World: (-196,4,-185), Chunk: (at 12,0,7 in -13,-12; contains blocks -208,0,-192 to -193,255,-177), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.entity.player.ServerPlayerEntity.playerTick(ServerPlayerEntity.java:379)
+	at net.minecraft.network.play.ServerPlayNetHandler.tick(ServerPlayNetHandler.java:188)
+	at net.minecraft.network.NetworkManager.tick(NetworkManager.java:250)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@76201821
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:152)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:903)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:821)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:120)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:662)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.15.2
+	Minecraft Version ID: 1.15.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_251, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 472369504 bytes (450 MB) / 2758279168 bytes (2630 MB) up to 5706350592 bytes (5442 MB)
+	CPUs: 8
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 5.1.0+69+master.79f13f7
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/eventbus-2.2.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.1.1-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 31.2
+	Forge: net.minecraftforge:31.2.0
+	FML Language Providers: 
+		javafml@31.2
+		minecraft@1
+	Mod List: 
+		client-extra.jar Minecraft {minecraft@1.15.2 DONE}
+		main Custom Guns Mod {customgunsmod@1.0 DONE}
+		forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar Forge {forge@31.2.0 DONE}
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/181, l='TEST', x=-195.01, y=4.00, z=-184.65]]
+	Data Packs: vanilla, mod:customgunsmod, mod:forge (incompatible)
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

@@ -7,9 +7,13 @@ import com.xanderindalzone.customgunsmod.init.InitSounds;
 import com.xanderindalzone.customgunsmod.packets.PacketHandler;
 import com.xanderindalzone.customgunsmod.packets.messages.HitMarkerMessage;
 
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
@@ -20,6 +24,9 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundCategory;
+import net.minecraft.util.SoundEvents;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.EntityRayTraceResult;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
@@ -98,6 +105,7 @@ public class PistolBulletEntity extends AbstractArrowEntity
 	
 	@Override
 	protected void onHit(RayTraceResult result) {
+		
 		if(result.getType() == RayTraceResult.Type.ENTITY)
 		{
 			EntityRayTraceResult entityResult = (EntityRayTraceResult) result;
@@ -126,8 +134,12 @@ public class PistolBulletEntity extends AbstractArrowEntity
 		}
 		if(result.getType() == RayTraceResult.Type.BLOCK)
 		{
-			spawnGroundParticles(this.getPosX(), this.getPosY(), this.getPosZ());
-			this.world.playSound(null, this.getPosition(), InitSounds.SOUND_bullet_ground_impact.get(), SoundCategory.PLAYERS, 1.0F, 1.0F);
+
+			checkAdditionalImpact();
+			if(!GLASS_HIT&&!IRON_HIT) {
+				spawnGroundParticles(this.getPosX(), this.getPosY(), this.getPosZ());
+				this.world.playSound(null, this.getPosition(), InitSounds.SOUND_bullet_ground_impact.get(), SoundCategory.PLAYERS, 1.0F, 1.0F);
+			}
 			this.remove();
 		}
 	}
@@ -153,6 +165,37 @@ public class PistolBulletEntity extends AbstractArrowEntity
 		}
 	}
 	
+	
+	
+	private void checkAdditionalImpact() {
+		for(int x=-2; x<=2; x++) 
+		{
+			for(int y=-2; y<=2; y++) 
+			{
+				for(int z=-2; z<=2; z++) 
+				{
+					if(this.world.getBlockState(new BlockPos(this.getPosX()+x, this.getPosY()+y, this.getPosZ()+z)).getMaterial() == Material.GLASS)
+					{
+						this.world.playSound(null, this.getPosition(), SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.PLAYERS, 1.0F, 1.0F);
+						GLASS_HIT=true;
+						BlockPos hitPos = new BlockPos(new BlockPos(this.getPosX()+x, this.getPosY()+y, this.getPosZ()+z));
+						ItemEntity droppedItem = new ItemEntity(this.world, this.getPosX()+x, this.getPosY()+y, this.getPosZ()+z, new ItemStack(Blocks.GLASS_PANE));
+						if(!this.world.isRemote) {
+							this.world.addEntity(droppedItem);
+						}
+						this.world.removeBlock(hitPos, false);
+						spawnSparkParticles(this.getPosX()+x, this.getPosY()+y, this.getPosZ()+z);
+					}
+					if(this.world.getBlockState(new BlockPos(this.getPosX()+x, this.getPosY()+y, this.getPosZ()+z)).getMaterial() == Material.IRON)
+					{
+						spawnSparkParticles(this.getPosX(), this.getPosY(), this.getPosZ());
+						this.world.playSound(null, this.getPosition(), SoundEvents.BLOCK_ANVIL_PLACE, SoundCategory.PLAYERS, 1.0F, 1.0F);
+						IRON_HIT=true;
+					}
+				}
+			}
+		}
+	}
 	
 	private void spawnGroundParticles(double x, double y, double z)
 	{

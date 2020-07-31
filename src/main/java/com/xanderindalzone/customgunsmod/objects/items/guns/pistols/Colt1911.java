@@ -31,7 +31,7 @@ public class Colt1911 extends Gun
 		
 		this.gun_is_full_auto=false;
 		this.zoom_fov=60;
-		this.aim_sensitivity=0.4D;	//normal sensitivity is 0.5D
+		this.aim_sensitivity=0.3D;	//normal sensitivity is 0.5D
 	}
 
 }

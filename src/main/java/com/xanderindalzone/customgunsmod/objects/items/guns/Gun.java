@@ -74,15 +74,14 @@ public class Gun extends Item
 
 	private static final IItemPropertyGetter AIM_PROPERTY_GETTER = (stack, world, entity) -> {
 	      return stack.hasTag()&&stack.getTag().getBoolean("gun_property_is_aiming") == true ? 1.0F : 0.0F;
-	   };
+	};
+
 	
 	
 	public Gun(Properties properties) {
 		super(properties);
-		
-		
+
 	    this.addPropertyOverride(new ResourceLocation("aiming"), AIM_PROPERTY_GETTER);
-		
 	}
 	
 	
@@ -128,7 +127,6 @@ public class Gun extends Item
 		}
 		else 
 		{
-			player.abilities.setWalkSpeed(0.1F);
 			gunStack.getTag().putBoolean("gun_property_is_aiming", false);
 		}
 	}
@@ -163,17 +161,13 @@ public class Gun extends Item
 	{
 		super.inventoryTick(stack, worldIn, entityIn, itemSlot, isSelected);
 		//DO STUFF
+		
 	}
 	
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
 		
-		
 		playerIn.setActiveHand(handIn);
-
-//			playerIn.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.2);
-//			System.out.println(playerIn.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getValue());
-
 		
 		if(playerIn.getHeldItemMainhand().getDamage()<this.gun_mag||playerIn.isCreative()) {
 					
@@ -254,7 +248,7 @@ public class Gun extends Item
 		
 		
 		double sneakModifier = 0;
-		if(playerIn.isSneaking()||playerIn.isCrouching()) {sneakModifier=0.07;}
+		if(playerIn.isSneaking()||playerIn.isCrouching()) {sneakModifier=0.37;}
 		double bulletXPos = posX+(look.x*1.3D);
 		double bulletYPos = posY+(look.y*1.5D)+1.6D-sneakModifier;
 		double bulletZPos = posZ+(look.z*1.3D);

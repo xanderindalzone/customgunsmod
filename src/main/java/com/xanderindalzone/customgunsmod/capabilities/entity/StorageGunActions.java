@@ -1,5 +1,6 @@
 package com.xanderindalzone.customgunsmod.capabilities.entity;
 
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.nbt.INBT;
 import net.minecraft.util.Direction;
@@ -17,7 +18,7 @@ public class StorageGunActions implements IStorage<IGunActions>
 		tag.putBoolean("is_aiming", instance.isAiming());
         tag.putDouble("fov", instance.getFOV());
         tag.putDouble("sensitivity", instance.getSensitivity());
-		
+
 		return tag;
 	}
 
@@ -27,10 +28,11 @@ public class StorageGunActions implements IStorage<IGunActions>
 	public void readNBT(Capability<IGunActions> capability, IGunActions instance, Direction side, INBT nbt) 
 	{
 		CompoundNBT tag = (CompoundNBT) nbt;
-		
+
 		instance.setAim(tag.getBoolean("is_aiming"));
 		instance.setFOV(tag.getDouble("fov"));
 		instance.setSensitivity(tag.getDouble("sensitivity"));
+
 	}
 
 }

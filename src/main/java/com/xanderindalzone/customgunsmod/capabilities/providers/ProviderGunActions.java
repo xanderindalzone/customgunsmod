@@ -1,7 +1,6 @@
 package com.xanderindalzone.customgunsmod.capabilities.providers;
 
 import com.xanderindalzone.customgunsmod.capabilities.entity.IGunActions;
-import com.xanderindalzone.customgunsmod.capabilities.entity.IGunAim;
 
 import net.minecraft.nbt.INBT;
 import net.minecraft.util.Direction;
