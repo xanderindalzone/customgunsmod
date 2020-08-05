@@ -49,7 +49,11 @@ public class PistolBulletEntity extends AbstractArrowEntity
 	public double initPosX;
 	public double initPosY;
 	public double initPosZ;
+	public double dirX;
+	public double dirY;
+	public double dirZ;
 	public PlayerEntity shooter;
+	public float speed;
 	
 	public PistolBulletEntity(EntityType<? extends AbstractArrowEntity> type, World worldIn) 
 	{
@@ -66,12 +70,13 @@ public class PistolBulletEntity extends AbstractArrowEntity
 		super(type, x, y, z, worldIn);
 		setNoGravity(true);
 	}
-	public PistolBulletEntity(EntityType<? extends AbstractArrowEntity> type, double x, double y, double z, World worldIn, PlayerEntity shooter, float damage) 
+	public PistolBulletEntity(EntityType<? extends AbstractArrowEntity> type, double x, double y, double z, World worldIn, PlayerEntity shooter, float damage, float speed) 
 	{
 		super(type, x, y, z, worldIn);
 		this.bullet_damage=damage;
 		this.shooter=shooter;
 		setNoGravity(true);
+		this.speed=speed;
 	}
 	
 
@@ -103,8 +108,13 @@ public class PistolBulletEntity extends AbstractArrowEntity
 		return this.shooter;
 	}
 	
+	
 	@Override
 	protected void onHit(RayTraceResult result) {
+		
+		double hitx;
+		double hity;
+		double hitz;
 		
 		if(result.getType() == RayTraceResult.Type.ENTITY)
 		{
@@ -112,6 +122,12 @@ public class PistolBulletEntity extends AbstractArrowEntity
 			if(entityResult.getEntity() instanceof LivingEntity) {
 				LivingEntity entityHit = (LivingEntity) entityResult.getEntity();
 				entityHit.attackEntityFrom(DamageSource.causeArrowDamage(this, entityHit), this.bullet_damage);
+				
+//				hitx = entityHit.getPosX();
+//				hity = entityHit.getPosY();
+//				hitz = entityHit.getPosZ();;
+//				
+//				this.setRawPosition(hitx, hity, hitz);
 				
 				if(entityHit.getHealth()<=0)
 				{
@@ -128,19 +144,27 @@ public class PistolBulletEntity extends AbstractArrowEntity
 						this.shooter.playSound(InitSounds.SOUND_hit_marker.get(), SoundCategory.PLAYERS, 1.0F, 1.0F);
 					}
 				}
-				spawnBloodParticles(this.getPosX(), this.getPosY(), this.getPosZ());
+				spawnBloodParticles(this.getPosX(), this.getPosY()+1, this.getPosZ());
 				this.remove();
 			}
 		}
-		if(result.getType() == RayTraceResult.Type.BLOCK)
+		else if(result.getType() == RayTraceResult.Type.BLOCK)
 		{
-
+			BlockRayTraceResult blockResult = (BlockRayTraceResult)result;
+			hitx = blockResult.getPos().getX();
+			hity = blockResult.getPos().getY();
+			hitz = blockResult.getPos().getZ();
+			this.setRawPosition(hitx, hity, hitz);
 			checkAdditionalImpact();
 			if(!GLASS_HIT&&!IRON_HIT) {
 				spawnGroundParticles(this.getPosX(), this.getPosY(), this.getPosZ());
 				this.world.playSound(null, this.getPosition(), InitSounds.SOUND_bullet_ground_impact.get(), SoundCategory.PLAYERS, 1.0F, 1.0F);
 			}
 			this.remove();
+		}
+		else
+		{
+			//DO STUFF
 		}
 	}
 	
@@ -154,7 +178,14 @@ public class PistolBulletEntity extends AbstractArrowEntity
 			initPosY=this.getPosY();
 			initPosZ=this.getPosZ();
 			hasFirstUpdated=true;
+			dirX=this.getMotion().x;
+			dirY=this.getMotion().y;
+			dirZ=this.getMotion().z;
+			//System.out.println("\nDir X: "+dirX+"\nDir Y: "+dirY+"\nDir Z: "+dirZ);
 		}
+		
+		if(this.getMotion().x==0&&this.getMotion().y==0&&this.getMotion().z==0) {this.remove();}
+		
 		
 		if(this.world.isRemote)
 		{
@@ -162,10 +193,14 @@ public class PistolBulletEntity extends AbstractArrowEntity
 			{
 				this.world.addParticle(ParticleTypes.FLAME, this.getPosX(), this.getPosY(), this.getPosZ(), 0.0D, 0.0D, 0.0D);
 			}
+			else
+			{
+				this.remove();
+			}
 		}
 	}
 	
-	
+
 	
 	private void checkAdditionalImpact() {
 		for(int x=-2; x<=2; x++) 

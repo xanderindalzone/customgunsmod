@@ -62,6 +62,9 @@ public class ClientGunEvents
 	    if(player != null&&player.getHeldItemMainhand().getItem() instanceof Gun){
 	    	event.getRenderer().getEntityModel().rightArmPose=ArmPose.BOW_AND_ARROW;
 	    }
+//	    if(player != null&&!(player.getHeldItemMainhand().getItem() instanceof Gun)&&player.getHeldItemOffhand().getItem() instanceof Gun){
+//	    	event.getRenderer().getEntityModel().rightArmPose=ArmPose.CROSSBOW_CHARGE;
+//	    }
 	}
 	
 

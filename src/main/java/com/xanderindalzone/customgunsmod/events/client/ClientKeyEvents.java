@@ -95,6 +95,9 @@ public class ClientKeyEvents
 					cap.setSensitivity(Minecraft.getInstance().gameSettings.mouseSensitivity);
 					cap.setAim(true);
 					
+					Minecraft.getInstance().gameSettings.fov=gun.zoom_fov;
+					Minecraft.getInstance().gameSettings.mouseSensitivity=gun.aim_sensitivity;
+					
 					PacketHandler.channel.sendToServer(new AimGunMessage(true));
 				}
 			}

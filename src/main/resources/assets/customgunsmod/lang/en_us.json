@@ -2,11 +2,23 @@
     //CREATIVE_TABS
     "itemGroup.guns": "Guns",
 	"itemGroup.ammo": "Ammo",
+	"itemGroup.gun_parts": "Gun Parts",
 	"itemGroup.custom_blocks": "Custom Blocks",
     
     //ITEMS
+    //=====================
+    //Guns
     "item.customgunsmod.pistol_colt_1911": "Colt 1911",
+    
+    //Bullets
     "item.customgunsmod.bullet_cal_45": "Cal .45 Bullet",
+    
+    //Gun Parts
+    "item.customgunsmod.pipe_cal_45": "Cal .45 Pipe",
+    "item.customgunsmod.barrel_cal_45_light": "Cal .45 Light",
+    "item.customgunsmod.barrel_cal_45_medium": "Cal .45 Medium Barrel",
+    "item.customgunsmod.barrel_cal_45_heavy": "Cal .45 Heavy Barrel",
+    //=====================
     
     //BLOCKS
     "block.customgunsmod.armored_glass_block": "Armored Glass",

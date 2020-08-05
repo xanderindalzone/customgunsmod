@@ -1,5 +1,6 @@
 package com.xanderindalzone.customgunsmod.objects.items.guns;
 
+import java.util.List;
 import java.util.Random;
 import java.util.UUID;
 
@@ -18,6 +19,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.Sound;
 import net.minecraft.client.audio.SoundEventAccessor;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -50,6 +52,7 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.event.world.BlockEvent.EntityPlaceEvent;
 
@@ -59,6 +62,8 @@ public class Gun extends Item
 	public int gun_mag;
 	
 	public GunTypes gun_type;
+	public GunFireTypes gun_fire_type;
+	public int gun_burst_shots=1;
 	public Item ammo_used;
 	public float gun_damage;
 	public float gun_base_accuracy;
@@ -67,7 +72,7 @@ public class Gun extends Item
 	public int gun_firing_rate;
 	public int gun_reload_cooldown;
 	public int gun_reload_cooldown_cock;
-	public boolean gun_is_full_auto;
+//	public boolean gun_is_full_auto;
 
 	public float zoom_fov;
 	public double aim_sensitivity;
@@ -75,15 +80,19 @@ public class Gun extends Item
 	private static final IItemPropertyGetter AIM_PROPERTY_GETTER = (stack, world, entity) -> {
 	      return stack.hasTag()&&stack.getTag().getBoolean("gun_property_is_aiming") == true ? 1.0F : 0.0F;
 	};
-
+	private static final IItemPropertyGetter CROUCH_PROPERTY_GETTER = (stack, world, entity) -> {
+		if(entity==null) {return 0.0F;}
+	      return (stack.hasTag()&&(entity.isCrouching()||entity.isSneaking()))
+	    		  &&(entity.getHeldItemMainhand()==stack||entity.getHeldItemOffhand()==stack)
+	    		  &&stack.getTag().getBoolean("gun_property_is_aiming") == false ? 1.0F : 0.0F;
+	};
 	
 	
 	public Gun(Properties properties) {
 		super(properties);
-
 	    this.addPropertyOverride(new ResourceLocation("aiming"), AIM_PROPERTY_GETTER);
+	    this.addPropertyOverride(new ResourceLocation("crouching"), CROUCH_PROPERTY_GETTER);
 	}
-	
 	
 
 	
@@ -115,7 +124,7 @@ public class Gun extends Item
 	@Override
 	public int getUseDuration(ItemStack stack) 
 	{
-		if(this.gun_is_full_auto) {return 0;}
+		if(this.gun_fire_type == GunFireTypes.AUTOMATIC) {return 0;}
 		else {return 72000;}
 	}
 	
@@ -166,7 +175,7 @@ public class Gun extends Item
 	
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-		
+		if(handIn!=Hand.MAIN_HAND) {return new ActionResult<ItemStack>(ActionResultType.FAIL, playerIn.getHeldItem(handIn));}
 		playerIn.setActiveHand(handIn);
 		
 		if(playerIn.getHeldItemMainhand().getDamage()<this.gun_mag||playerIn.isCreative()) {
@@ -201,7 +210,7 @@ public class Gun extends Item
 		//=======================================================
 		//PROPIEDADES DEL DISPARO
 		//=======================================================
-		PistolBulletEntity bullet = new PistolBulletEntity(InitEntities.PISTOL_BULLET_ENTITY.get(), 1.0D, 1.0D, 1.0D, world, playerIn, this.gun_damage);
+		PistolBulletEntity bullet = new PistolBulletEntity(InitEntities.PISTOL_BULLET_ENTITY.get(), 1.0D, 1.0D, 1.0D, world, playerIn, this.gun_damage, this.gun_bullet_speed);
 		
 //		double sneaking_accuracy=1;
 //		double walking_accuracy=1;
@@ -266,7 +275,9 @@ public class Gun extends Item
 		
 
 		//SPAWNEAR FOGONAZO
-		worldIn.addParticle(ParticleTypes.CLOUD, bulletXPos, bulletYPos, bulletZPos, 0.0D, 0.5D, 0.0D);
+		worldIn.addParticle(ParticleTypes.FLAME, bulletXPos, bulletYPos+0.1, bulletZPos, 0.0D, 0.0D, 0.0D);
+		worldIn.addParticle(ParticleTypes.CLOUD, bulletXPos, bulletYPos+0.1, bulletZPos, 0.0D, 0.5D, 0.0D);
+		worldIn.addParticle(ParticleTypes.SWEEP_ATTACK, bulletXPos, bulletYPos+0.1, bulletZPos, 0.0D, 0.0D, 0.0D);
 		
 		//ESTABLECER POSICION INICIAL DE LA BALA
 		bullet.setPosition(bulletXPos, bulletYPos, bulletZPos);

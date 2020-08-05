@@ -1,0 +1,1088 @@
+[03ago2020 22:41:12.500] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20200515.085601, --fml.mcVersion, 1.15.2, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 31.2.0, --version, MOD_DEV, --assetIndex, 1.15, --assetsDir, C:\Users\alexs\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[03ago2020 22:41:12.507] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 5.1.0+69+master.79f13f7 starting: java version 1.8.0_251 by Oracle Corporation
+[03ago2020 22:41:13.996] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[03ago2020 22:41:16.129] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\alexs\.gradle\caches\forge_gradle\assets, --assetIndex, 1.15, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[03ago2020 22:41:19.903] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[03ago2020 22:41:38.084] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[03ago2020 22:41:39.629] [modloading-worker-3/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 31.2.0, for MC 1.15.2 with MCP 20200515.085601
+[03ago2020 22:41:39.629] [modloading-worker-3/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v31.2.0 Initialized
+[03ago2020 22:41:40.057] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity customgunsmod:bullet_cal_45_entity
+[03ago2020 22:41:45.128] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[03ago2020 22:41:45.292] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[03ago2020 22:41:45.527] [modloading-worker-1/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: Got game settings net.minecraft.client.GameSettings@6a02611b
+[03ago2020 22:41:45.534] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [customgunsmod] Starting version check at http://example.com/
+[03ago2020 22:41:45.647] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.net.UnknownHostException: example.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.<init>(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:173) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:206) ~[?:?]
+	at java.lang.Iterable.forEach(Unknown Source) [?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:157) [?:?]
+[03ago2020 22:41:45.650] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[03ago2020 22:41:47.045] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 31.2.0 Target: null
+[03ago2020 22:41:50.835] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/bullet_cal_45
+[03ago2020 22:41:50.836] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/pistol_colt_1911
+[03ago2020 22:41:50.836] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/pistol_colt_1911_aim
+[03ago2020 22:41:52.702] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[03ago2020 22:41:52.703] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[03ago2020 22:41:52.889] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[03ago2020 22:41:53.086] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x4 minecraft:textures/atlas/signs.png-atlas
+[03ago2020 22:41:53.086] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[03ago2020 22:41:53.087] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[03ago2020 22:41:53.088] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[03ago2020 22:41:53.089] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[03ago2020 22:41:53.090] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[03ago2020 22:41:53.778] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[03ago2020 22:41:53.780] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[03ago2020 22:41:53.781] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[03ago2020 22:41:54.707] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[03ago2020 22:41:59.507] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[03ago2020 22:41:59.508] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[03ago2020 22:41:59.509] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[03ago2020 22:41:59.511] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[03ago2020 22:41:59.512] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[03ago2020 22:42:00.944] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.15.2
+[03ago2020 22:42:00.945] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
+[03ago2020 22:42:01.195] [Server thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this SERVER instance
+[03ago2020 22:42:01.535] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar
+[03ago2020 22:42:03.035] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 6 recipes
+[03ago2020 22:42:04.929] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 825 advancements
+[03ago2020 22:42:05.899] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[03ago2020 22:42:06.697] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[03ago2020 22:42:06.697] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[03ago2020 22:42:07.001] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 7%
+[03ago2020 22:42:07.255] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: ====================================
+[03ago2020 22:42:07.255] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: Loading CustomGunsMod on the server!
+[03ago2020 22:42:07.255] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: ====================================
+[03ago2020 22:42:07.273] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 1307 ms
+[03ago2020 22:42:07.661] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 5.879635829294832E-48
+Dir Y: 4.390110162869996E-49
+Dir Z: -1.5389182992107433E-48
+[03ago2020 22:42:07.665] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.0790051314819397E-48
+Dir Y: 9.491527503088817E-50
+Dir Z: 1.3115208374107408E-48
+[03ago2020 22:42:07.685] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[03ago2020 22:42:07.687] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[03ago2020 22:42:07.691] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 19, from 10
+[03ago2020 22:42:11.155] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[03ago2020 22:42:11.305] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@218e6b6c
+[03ago2020 22:42:11.349] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:860f6b87] logged in with entity id 188 at (-164.95134708983068, 4.0, -150.39790583142894)
+[03ago2020 22:42:11.448] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[03ago2020 22:42:12.444] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 7.062735184155334E-50
+Dir Y: 2.6683715035076615E-51
+Dir Z: 1.061303739382918E-49
+[03ago2020 22:42:13.154] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.0453742039932387E-53
+Dir Y: 3.6121189692666625E-53
+Dir Z: 2.008047998780061E-52
+[03ago2020 22:42:13.154] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -3.3503046005608136E-53
+Dir Y: 1.3848298161676697E-52
+Dir Z: 3.7501975096279374E-52
+[03ago2020 22:42:13.155] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.8627497911439195E-53
+Dir Y: 4.59283452339201E-54
+Dir Z: 2.3248722024109307E-52
+[03ago2020 22:42:13.155] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 6.89887905095674E-52
+Dir Y: 1.7417243457502047E-51
+Dir Z: 5.541861386185589E-51
+[03ago2020 22:42:13.155] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 8.306637557894803E-51
+Dir Y: -2.6042736266636193E-51
+Dir Z: 1.6464699110570803E-50
+[03ago2020 22:42:13.157] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 5.716982308584225E-54
+Dir Y: 3.42911156097249E-52
+Dir Z: 5.784731054854208E-52
+[03ago2020 22:42:13.196] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 8.823863080163851E-53
+Dir Y: 1.1809396658799013E-51
+Dir Z: 1.256052087424241E-51
+[03ago2020 22:42:13.196] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.4214195455422963E-30
+Dir Y: 6.117995171357233E-31
+Dir Z: -2.598113403537511E-29
+[03ago2020 22:42:13.197] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.1578540575838394E-52
+Dir Y: 9.125508939287102E-52
+Dir Z: 4.181054678060042E-52
+[03ago2020 22:42:13.201] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[03ago2020 22:42:13.229] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'TEST'/minecraft:overworld
+[03ago2020 22:42:13.452] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 124 advancements
+[03ago2020 22:42:13.467] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.slime.jump_small
+[03ago2020 22:42:14.236] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.239] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.239] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.240] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.241] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.241] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.241] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.242] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.243] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.243] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.247] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.247] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.247] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.248] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.248] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.248] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.249] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.249] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.249] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.249] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.6103350058794023
+Dir Y: 0.1303087512552738
+Dir Z: -0.27212625262141227
+[03ago2020 22:42:14.249] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.249] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.250] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.250] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.250] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.251] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.251] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.251] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.251] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.252] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.252] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.252] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.253] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.253] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.253] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.254] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.254] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.254] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.254] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.255] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.255] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.255] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.256] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.256] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.256] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:14.293] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.9742897572314916E-48
+Dir Y: -9.083832261480587E-50
+Dir Z: 4.8852727591432856E-48
+[03ago2020 22:42:14.293] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.680099854907803E-50
+Dir Y: 4.771914614871869E-50
+Dir Z: 9.693470339669934E-50
+[03ago2020 22:42:14.293] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.426339058331547E-51
+Dir Y: 1.4594007260827617E-52
+Dir Z: 1.1866597675399585E-50
+[03ago2020 22:42:14.294] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.904209868721394E-49
+Dir Y: -2.744921752704739E-51
+Dir Z: 4.618347654971669E-49
+[03ago2020 22:42:14.296] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -2.651550761887312E-53
+Dir Y: 1.5569030713079352E-53
+Dir Z: 3.8899934243765814E-52
+[03ago2020 22:42:14.296] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -2.0470191213578723E-53
+Dir Y: 9.661463327489451E-54
+Dir Z: 4.3559202658487605E-52
+[03ago2020 22:42:14.296] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.3890410603668946E-52
+Dir Y: 2.7856624238228586E-52
+Dir Z: 1.172405496205654E-51
+[03ago2020 22:42:14.297] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 7.331491514999802E-53
+Dir Y: 2.448669063529339E-52
+Dir Z: 7.923212217806401E-52
+[03ago2020 22:42:14.297] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.3145965578431858E-52
+Dir Y: 1.1296626329746073E-52
+Dir Z: 1.080947018682411E-51
+[03ago2020 22:42:14.297] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 9.167603635579566E-54
+Dir Y: 1.1545434929801922E-51
+Dir Z: 9.676672535421046E-51
+[03ago2020 22:42:14.298] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.0757844223795917E-52
+Dir Y: 1.968380095838764E-52
+Dir Z: 6.651077145403849E-51
+[03ago2020 22:42:14.298] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 7.864432566896736E-52
+Dir Y: 1.531004378763348E-51
+Dir Z: 1.0236667410838091E-50
+[03ago2020 22:42:14.299] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -2.6028298168912426E-48
+Dir Y: 1.3435282309098644E-48
+Dir Z: -1.2732034005119568E-47
+[03ago2020 22:42:14.299] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.437833995971538E-29
+Dir Y: 1.752348308098178E-30
+Dir Z: -8.963779341129286E-29
+[03ago2020 22:42:14.300] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -9.099727565073892E-31
+Dir Y: 2.0572261943686214E-30
+Dir Z: -3.7531550522622653E-29
+[03ago2020 22:42:14.300] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.0286801332580915E-29
+Dir Y: 3.121377676267194E-30
+Dir Z: -3.3311275232328876E-29
+[03ago2020 22:42:14.300] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.433794782674088E-49
+Dir Y: 9.97869907067799E-48
+Dir Z: -7.19468562080415E-47
+[03ago2020 22:42:14.300] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -5.915480410568028E-52
+Dir Y: 3.7755687283185554E-51
+Dir Z: 1.9749788977336552E-50
+[03ago2020 22:42:14.302] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.0502487840543342E-29
+Dir Y: 2.2687965165831354E-30
+Dir Z: -2.669080546353538E-29
+[03ago2020 22:42:14.302] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.1494265874663592E-29
+Dir Y: 1.975970378245441E-32
+Dir Z: -4.1389705234396436E-29
+[03ago2020 22:42:14.302] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -6.218294334278175E-53
+Dir Y: 3.5861517036627233E-53
+Dir Z: 1.2512562412156042E-52
+[03ago2020 22:42:14.303] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -2.062221784476315E-48
+Dir Y: 7.880607252019249E-49
+Dir Z: -9.945181416816514E-48
+[03ago2020 22:42:14.303] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -2.7510055979384075E-48
+Dir Y: 5.492454751688299E-50
+Dir Z: -1.4283014247790368E-47
+[03ago2020 22:42:14.303] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -5.298896240753509E-29
+Dir Y: 1.0154907652651413E-29
+Dir Z: -7.308446654034447E-29
+[03ago2020 22:42:14.303] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.5967407030167677E-28
+Dir Y: 1.8346822745526306E-29
+Dir Z: -3.26081501139229E-28
+[03ago2020 22:42:14.304] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -2.691479733818461E-52
+Dir Y: 8.3346166696773885E-53
+Dir Z: 3.782855248093295E-52
+[03ago2020 22:42:14.304] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -4.843641456313305E-47
+Dir Y: 1.3837378082257994E-48
+Dir Z: -4.012467235015267E-47
+[03ago2020 22:42:14.305] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -9.726102703913909E-29
+Dir Y: 3.358147182381436E-29
+Dir Z: -1.0093429941137007E-28
+[03ago2020 22:42:14.305] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.6739716110815451E-47
+Dir Y: 4.600767285043099E-50
+Dir Z: -3.5045969558314065E-47
+[03ago2020 22:42:14.306] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.3461354298394403E-28
+Dir Y: 2.1835991799376392E-29
+Dir Z: -1.7235137885031428E-28
+[03ago2020 22:42:14.374] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -8.049471667974025E-30
+Dir Y: 6.944633202929773E-31
+Dir Z: -2.0447127808436636E-28
+[03ago2020 22:42:14.397] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -5.935918035740415E-47
+Dir Y: 4.798614890766246E-48
+Dir Z: -4.2262058222839556E-48
+[03ago2020 22:42:14.521] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.2798504325815153E-47
+Dir Y: -1.2260808905072766E-48
+Dir Z: -8.441452149832156E-47
+[03ago2020 22:42:14.524] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.slime.squish_small
+[03ago2020 22:42:14.543] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0
+Dir Y: 0.0
+Dir Z: 0.0
+[03ago2020 22:42:43.238] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.8797750749876697
+Dir Y: -0.9694302938766283
+Dir Z: -3.816392542860092
+[03ago2020 22:42:43.245] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.8797387584745884
+Dir Y: -0.9693337593376636
+Dir Z: -3.8163262867629526
+[03ago2020 22:42:45.963] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.2433676513520753
+Dir Y: -0.9881190894547719
+Dir Z: -3.601243939565348
+[03ago2020 22:42:45.981] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.2433162619769573
+Dir Y: -0.9880200095176697
+Dir Z: -3.6011250346899035
+[03ago2020 22:42:46.613] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.66597351233663
+Dir Y: -0.7352299186388529
+Dir Z: -3.80402973004852
+[03ago2020 22:42:46.635] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.6658987564146519
+Dir Y: -0.7351987570822238
+Dir Z: -3.8039512866437435
+[03ago2020 22:42:47.309] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.1349424453680627
+Dir Y: -0.5172771132033025
+Dir Z: -3.9435134012733317
+[03ago2020 22:42:47.328] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.13488750129938126
+Dir Y: -0.5172750049829483
+Dir Z: -3.8610000371932984
+[03ago2020 22:42:48.658] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.007589423217345681
+Dir Y: -0.12488750995301245
+Dir Z: -3.9580230140495587
+[03ago2020 22:42:48.679] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.007548750072717667
+Dir Y: -0.12486375120282171
+Dir Z: -3.8610000371932984
+[03ago2020 22:42:49.384] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.2698987525999546
+Dir Y: 0.0365062503516674
+Dir Z: -0.5333625051379204
+[03ago2020 22:42:49.384] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.2421787523329258
+Dir Y: 0.08761500084400177
+Dir Z: -0.7413862571418285
+[03ago2020 22:42:49.384] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.09021375086903571
+Dir Y: 0.10395000100135803
+Dir Z: -0.9105525087714195
+[03ago2020 22:42:49.384] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.09751500093936921
+Dir Y: 0.09862875095009804
+Dir Z: -1.0408612600266933
+[03ago2020 22:42:49.385] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.08328375080227853
+Dir Y: 0.11496375110745431
+Dir Z: -0.7329712570607663
+[03ago2020 22:42:49.385] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.19503000187873842
+Dir Y: 0.12969000124931335
+Dir Z: -0.9616612592637539
+[03ago2020 22:42:49.433] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.029328750282526014
+Dir Y: 0.07437375071644783
+Dir Z: -1.1022412606179715
+[03ago2020 22:42:49.433] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.17263125166296958
+Dir Y: 0.056677500545978546
+Dir Z: -0.9755212593972683
+[03ago2020 22:42:49.433] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.15901875153183936
+Dir Y: 0.0029700000286102296
+Dir Z: -0.809943757802248
+[03ago2020 22:42:49.433] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.1815412517488003
+Dir Y: -0.0019800000190734863
+Dir Z: -0.9616612592637539
+[03ago2020 22:42:49.463] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.02312235351574099
+Dir Y: -0.22312200120449788
+Dir Z: -3.9536415075643276
+[03ago2020 22:42:49.482] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.023017500221729277
+Dir Y: -0.22312125214934347
+Dir Z: -3.8610000371932984
+[03ago2020 22:42:50.157] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.008337240113164945
+Dir Y: -0.23941951237285508
+Dir Z: -3.952747173239459
+[03ago2020 22:42:50.180] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.008291250079870225
+Dir Y: -0.23933250230550765
+Dir Z: -3.8610000371932984
+[03ago2020 22:42:50.711] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.11295951177216068
+Dir Y: -0.38701435730146017
+Dir Z: -3.9394237397119127
+[03ago2020 22:42:50.728] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.11286000108718873
+Dir Y: -0.38696625372767446
+Dir Z: -3.8610000371932984
+[03ago2020 22:42:51.158] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.13585082080696154
+Dir Y: -0.42779992068644646
+Dir Z: -3.9344797632620043
+[03ago2020 22:42:51.176] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.1357537513077259
+Dir Y: -0.42768000411987306
+Dir Z: -3.8610000371932984
+[03ago2020 22:42:51.657] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.2804356813623272
+Dir Y: -0.3960815595992315
+Dir Z: -3.930149476240615
+[03ago2020 22:42:51.681] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.2804175027012825
+Dir Y: -0.3960000038146973
+Dir Z: -3.8610000371932984
+[03ago2020 22:42:52.863] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.8984511777880329
+Dir Y: -0.3155424637196518
+Dir Z: -3.84380242951039
+[03ago2020 22:42:52.879] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.8984250086545944
+Dir Y: -0.31543875303864477
+Dir Z: -3.8437987870275974
+[03ago2020 22:42:53.563] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.1275162447824982
+Dir Y: -0.36887387482023115
+Dir Z: -3.7781263310078543
+[03ago2020 22:42:53.578] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -1.1274862608611584
+Dir Y: -0.3687750035524368
+Dir Z: -3.778087536394596
+[03ago2020 22:42:54.859] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.97238198919014
+Dir Y: -0.3140286276192725
+Dir Z: -3.8258933197454326
+[03ago2020 22:42:54.878] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.9723037593662739
+Dir Y: -0.31395375302433964
+Dir Z: -3.825855036854744
+[03ago2020 22:42:55.461] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.9307523668065443
+Dir Y: -0.30078060708111565
+Dir Z: -3.837294725189736
+[03ago2020 22:42:55.480] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.9307237589657307
+Dir Y: -0.30071250289678575
+Dir Z: -3.8372400369644164
+[03ago2020 22:42:56.407] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.5456770025605095
+Dir Y: -0.25988036048417484
+Dir Z: -3.913604409247739
+[03ago2020 22:42:56.429] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.5456137552559376
+Dir Y: -0.25987500250339507
+Dir Z: -3.8610000371932984
+[03ago2020 22:42:56.908] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.5203915818991476
+Dir Y: -0.2750320869356173
+Dir Z: -3.916011960082699
+[03ago2020 22:42:56.930] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.5203687550127506
+Dir Y: -0.2749725026488304
+Dir Z: -3.8610000371932984
+[03ago2020 22:42:57.509] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.2918307433822491
+Dir Y: -0.3268947150010746
+Dir Z: -3.935679762129155
+[03ago2020 22:42:57.533] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.29180250281095504
+Dir Y: -0.32682375314831735
+Dir Z: -3.8610000371932984
+[03ago2020 22:42:58.008] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.36635863329228613
+Dir Y: -0.29245154334693524
+Dir Z: -3.9321564767062682
+[03ago2020 22:42:58.034] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.366300003528595
+Dir Y: -0.2924212528169155
+Dir Z: -3.8610000371932984
+[03ago2020 22:42:58.711] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.861195213746015
+Dir Y: -0.2932088006965685
+Dir Z: -3.854085031919624
+[03ago2020 22:42:58.732] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.8611762582957744
+Dir Y: -0.2931637528240681
+Dir Z: -3.854070037126541
+[03ago2020 22:42:59.310] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.2889696722220378
+Dir Y: -0.29396602854190235
+Dir Z: -3.7327926208543545
+[03ago2020 22:42:59.330] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.2888562624156474
+Dir Y: -0.2939062528312206
+Dir Z: -3.732671285957098
+[03ago2020 22:42:59.807] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.753781703915564
+Dir Y: -0.2526819310091426
+Dir Z: -3.541469040653624
+[03ago2020 22:42:59.829] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.7536612668931484
+Dir Y: -0.25257375243306157
+Dir Z: -3.5413537841141225
+[03ago2020 22:43:00.207] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.972870010068874
+Dir Y: -0.24320905934611048
+Dir Z: -3.424942872138388
+[03ago2020 22:43:00.233] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.972822519004345
+Dir Y: -0.24316875234246255
+Dir Z: -3.424905032992363
+[03ago2020 22:43:00.483] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.6103350058794023
+Dir Y: 0.1303087512552738
+Dir Z: -0.27212625262141227
+[03ago2020 22:43:00.811] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.265713754068372
+Dir Y: -0.24169327596196766
+Dir Z: -3.238784432616228
+[03ago2020 22:43:00.828] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.2656150218248365
+Dir Y: -0.24168375232815745
+Dir Z: -3.238661281198263
+[03ago2020 22:43:01.257] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.346669303134661
+Dir Y: -0.23259777904102563
+Dir Z: -3.1812956591933244
+[03ago2020 22:43:01.285] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.3465475226044656
+Dir Y: -0.23252625223994255
+Dir Z: -3.181241280645132
+[03ago2020 22:43:01.657] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.280665116822263
+Dir Y: -0.2727595772792313
+Dir Z: -3.225797584136785
+[03ago2020 22:43:01.679] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.2805887719690796
+Dir Y: -0.2727450026273728
+Dir Z: -3.2257912810742857
+[03ago2020 22:43:02.006] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.8882142678002083
+Dir Y: -0.3038090463936598
+Dir Z: -3.4675565219171745
+[03ago2020 22:43:02.033] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.8881775181889533
+Dir Y: -0.3038062529265881
+Dir Z: -3.467475033402443
+[03ago2020 22:43:02.409] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.8245902523328823
+Dir Y: -0.30797281114896435
+Dir Z: -3.5010887483258557
+[03ago2020 22:43:02.437] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.8245700175762176
+Dir Y: -0.3078900029659271
+Dir Z: -3.5010112837255
+[03ago2020 22:43:02.817] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.8708144022437239
+Dir Y: -0.3238677213992034
+Dir Z: -3.475163910486856
+[03ago2020 22:43:02.829] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.8707287680208684
+Dir Y: -0.3238537531197071
+Dir Z: -3.4751475334763526
+[03ago2020 22:43:03.159] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.9303212697488732
+Dir Y: -0.3117577702036556
+Dir Z: -3.443583452495261
+[03ago2020 22:43:03.177] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.9302525185942652
+Dir Y: -0.31172625300288204
+Dir Z: -3.443467533171177
+[03ago2020 22:43:03.508] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.7545305230355552
+Dir Y: -0.2841211814235791
+Dir Z: -3.5387142832227596
+[03ago2020 22:43:03.529] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.7545275169014931
+Dir Y: -0.28400625273585317
+Dir Z: -3.5386312840878964
+[03ago2020 22:43:03.830] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.09751500093936921
+Dir Y: 0.09862875095009804
+Dir Z: -1.0408612600266933
+[03ago2020 22:43:03.888] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.09021375086903571
+Dir Y: 0.10395000100135803
+Dir Z: -0.9105525087714195
+[03ago2020 22:43:03.888] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.15901875153183936
+Dir Y: 0.0029700000286102296
+Dir Z: -0.809943757802248
+[03ago2020 22:43:03.933] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.2421787523329258
+Dir Y: 0.08761500084400177
+Dir Z: -0.7413862571418285
+[03ago2020 22:43:03.963] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.4616245839728208
+Dir Y: -0.1487917901007627
+Dir Z: -3.677378825803032
+[03ago2020 22:43:03.988] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.4616112640798091
+Dir Y: -0.14874750143289567
+Dir Z: -3.677355035424233
+[03ago2020 22:43:04.043] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.2698987525999546
+Dir Y: 0.0365062503516674
+Dir Z: -0.5333625051379204
+[03ago2020 22:43:04.077] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.1815412517488003
+Dir Y: -0.0019800000190734863
+Dir Z: -0.9616612592637539
+[03ago2020 22:43:04.078] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.19503000187873842
+Dir Y: 0.12969000124931335
+Dir Z: -0.9616612592637539
+[03ago2020 22:43:04.131] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.08328375080227853
+Dir Y: 0.11496375110745431
+Dir Z: -0.7329712570607663
+[03ago2020 22:43:04.131] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.029328750282526014
+Dir Y: 0.07437375071644783
+Dir Z: -1.1022412606179715
+[03ago2020 22:43:04.178] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.17263125166296958
+Dir Y: 0.056677500545978546
+Dir Z: -0.9755212593972683
+[03ago2020 22:43:04.258] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.6635019701033116
+Dir Y: -0.028474273005986372
+Dir Z: -3.593542712973033
+[03ago2020 22:43:04.285] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 1.6634475160241127
+Dir Y: -0.028462500274181367
+Dir Z: -3.5934525346159933
+[03ago2020 22:43:04.659] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.09637984626346
+Dir Y: -0.0220201816854666
+Dir Z: -3.3595101250976995
+[03ago2020 22:43:04.684] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.0963250201940538
+Dir Y: -0.021903750211000442
+Dir Z: -3.3594412823617454
+[03ago2020 22:43:05.157] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.2584117940065767
+Dir Y: -0.011389791814433003
+Dir Z: -3.252852318627447
+[03ago2020 22:43:05.180] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 2.258313771754503
+Dir Y: -0.011385000109672546
+Dir Z: -3.252768781334162
+[03ago2020 22:43:06.255] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.0703972587720045
+Dir Y: -0.22312200120449788
+Dir Z: -2.4908787657359994
+[03ago2020 22:43:06.280] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.0703612795770168
+Dir Y: -0.22312125214934347
+Dir Z: -2.490840023994446
+[03ago2020 22:43:06.657] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.4133568877967377
+Dir Y: -0.30645876851848897
+Dir Z: -1.9841060734190705
+[03ago2020 22:43:06.684] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.413272532880306
+Dir Y: -0.306405002951622
+Dir Z: -1.9840837691128255
+[03ago2020 22:43:07.161] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.6091575492319996
+Dir Y: -0.1600118263559506
+Dir Z: -1.5113282731410482
+[03ago2020 22:43:07.183] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.6090450347661975
+Dir Y: -0.16000875154137612
+Dir Z: -1.5112350145578384
+[03ago2020 22:43:07.455] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.7871397560069875
+Dir Y: -0.1486968645219278
+Dir Z: -0.5766906719589582
+[03ago2020 22:43:07.480] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.7871212864816193
+Dir Y: -0.1486237514317036
+Dir Z: -0.5766750055551529
+[03ago2020 22:43:07.759] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.9125406419930315
+Dir Y: -0.2103132417596647
+Dir Z: -0.017726911687824767
+[03ago2020 22:43:07.783] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8610000371932984
+Dir Y: -0.21025125202536585
+Dir Z: -0.01769625017046928
+[03ago2020 22:43:08.060] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.7880269338180517
+Dir Y: 0.1983110824941925
+Dir Z: 0.6393409554366195
+[03ago2020 22:43:08.085] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.7879875364899633
+Dir Y: 0.19824750190973284
+Dir Z: 0.639292506158352
+[03ago2020 22:43:08.910] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.9110894627627886
+Dir Y: -0.5291773131801847
+Dir Z: 0.3239628727649233
+[03ago2020 22:43:08.933] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8610000371932984
+Dir Y: -0.5291550050973892
+Dir Z: 0.3238537531197071
+[03ago2020 22:43:09.483] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.6103350058794023
+Dir Y: 0.1303087512552738
+Dir Z: -0.27212625262141227
+[03ago2020 22:43:09.561] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.9302759906766482
+Dir Y: -0.4459123445789004
+Dir Z: 0.18892737376890878
+[03ago2020 22:43:09.587] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8610000371932984
+Dir Y: -0.4458712542951107
+Dir Z: 0.18884250181913376
+[03ago2020 22:43:10.207] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.852679683128315
+Dir Y: -0.7360323106619546
+Dir Z: 0.5447152804157014
+[03ago2020 22:43:10.234] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8525850371122363
+Dir Y: -0.7359412570893764
+Dir Z: 0.5446237552464008
+[03ago2020 22:43:10.556] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.6716372891304445
+Dir Y: -0.8119878251093837
+Dir Z: 1.2415131867318507
+[03ago2020 22:43:10.577] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.671538785368204
+Dir Y: -0.8119237578213215
+Dir Z: 1.241460011959076
+[03ago2020 22:43:10.907] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.369504529509925
+Dir Y: -0.8946612325067349
+Dir Z: 1.8781962599484245
+[03ago2020 22:43:10.934] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.3694650324583058
+Dir Y: -0.8945887586176395
+Dir Z: 1.8781537680923939
+[03ago2020 22:43:11.306] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.373011056490725
+Dir Y: -0.8698633998980512
+Dir Z: 1.8835431471115953
+[03ago2020 22:43:11.330] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.3729300324916838
+Dir Y: -0.869838758379221
+Dir Z: 1.883475018143654
+[03ago2020 22:43:11.809] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.309981611665876
+Dir Y: -0.7639914109392976
+Dir Z: 2.035175183350873
+[03ago2020 22:43:11.833] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.3099412818849085
+Dir Y: -0.7639087573587895
+Dir Z: 2.0350687696039675
+[03ago2020 22:43:12.206] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.300018127759472
+Dir Y: -0.6684037946477446
+Dir Z: 2.0843982682748106
+[03ago2020 22:43:12.229] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.299917531788349
+Dir Y: -0.6683737564384937
+Dir Z: 2.0843212700784206
+[03ago2020 22:43:12.656] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.3036733564094902
+Dir Y: -0.6054520641476415
+Dir Z: 2.097801481428064
+[03ago2020 22:43:12.681] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.3036300318241123
+Dir Y: -0.6053850058317185
+Dir Z: 2.097686270207167
+[03ago2020 22:43:13.355] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.342145074614564
+Dir Y: -0.5810526575987041
+Dir Z: 2.043047874581191
+[03ago2020 22:43:13.383] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.342116282194853
+Dir Y: -0.5810062555968761
+Dir Z: 2.0429887696802616
+[03ago2020 22:43:13.656] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.377999643441399
+Dir Y: -0.5555030554400844
+Dir Z: 1.9905113388120412
+[03ago2020 22:43:13.683] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.3778800325393674
+Dir Y: -0.555390005350113
+Dir Z: 1.9903950191736222
+[03ago2020 22:43:14.607] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.2699366968322614
+Dir Y: 0.03651575717732499
+Dir Z: -0.533420536067296
+[03ago2020 22:43:14.607] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.242211485721673
+Dir Y: 0.08773301690802311
+Dir Z: -0.7414242570906047
+[03ago2020 22:43:14.607] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.19509842128765523
+Dir Y: 0.12970587838320005
+Dir Z: -0.9616621533085733
+[03ago2020 22:43:14.607] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.09031813160533349
+Dir Y: 0.10395138323796692
+Dir Z: -0.9106022351767544
+[03ago2020 22:43:14.608] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.09756814655660462
+Dir Y: 0.09867226872615467
+Dir Z: -1.0409825832233137
+[03ago2020 22:43:14.608] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: -0.08328669787211912
+Dir Y: 0.11504665829340206
+Dir Z: -0.7330630410762132
+[03ago2020 22:43:14.608] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.0294433665132588
+Dir Y: 0.07441604023112486
+Dir Z: -1.1023178645557044
+[03ago2020 22:43:14.608] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.1591278282778033
+Dir Y: 0.002994032301091005
+Dir Z: -0.8100013912397239
+[03ago2020 22:43:14.608] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.18154132607069526
+Dir Y: -0.0019964345404366855
+Dir Z: -0.9617072736915118
+[03ago2020 22:43:14.608] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.1726693368456265
+Dir Y: 0.05672128233068746
+Dir Z: -0.9756074871550423
+[03ago2020 22:43:14.706] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.859991556634725
+Dir Y: -0.36055684884022554
+Dir Z: 0.8075049418512492
+[03ago2020 22:43:14.732] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.859886287182569
+Dir Y: -0.36048375347256656
+Dir Z: 0.8074687577784062
+[03ago2020 22:43:14.992] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 0.6103350058794023
+Dir Y: 0.1303087512552738
+Dir Z: -0.27212625262141227
+[03ago2020 22:43:15.360] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.7660217790991055
+Dir Y: -0.377567198635397
+Dir Z: 1.1645265560273117
+[03ago2020 22:43:15.384] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.7659600362777708
+Dir Y: -0.37756125363707543
+Dir Z: 1.164487511217594
+[03ago2020 22:43:16.107] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8710743156449894
+Dir Y: -0.3480783299359729
+Dir Z: 0.758436577473617
+[03ago2020 22:43:16.132] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8610000371932984
+Dir Y: -0.3479850033521652
+Dir Z: 0.7583400073051453
+[03ago2020 22:43:16.555] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.9020413202424606
+Dir Y: -0.3132716948169332
+Dir Z: 0.5979436329983088
+[03ago2020 22:43:16.580] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8610000371932984
+Dir Y: -0.31321125301718716
+Dir Z: 0.5978362557590008
+[03ago2020 22:43:17.411] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.928518242532732
+Dir Y: -0.3083513218065832
+Dir Z: 0.3914893334073426
+[03ago2020 22:43:17.433] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8610000371932984
+Dir Y: -0.3082612529695034
+Dir Z: 0.3914212537705898
+[03ago2020 22:43:18.311] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.9218823715352755
+Dir Y: -0.4262901266750916
+Dir Z: 0.3445516220143503
+[03ago2020 22:43:18.328] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8610000371932984
+Dir Y: -0.42619500410556793
+Dir Z: 0.34452000331878657
+[03ago2020 22:43:19.009] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.9308877918300027
+Dir Y: -0.37605545734027856
+Dir Z: 0.29716016400014666
+[03ago2020 22:43:19.029] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8610000371932984
+Dir Y: -0.37595250362157817
+Dir Z: 0.29712375286221504
+[03ago2020 22:43:20.260] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8305745899130557
+Dir Y: -0.5716622652047789
+Dir Z: 0.8255312426936143
+[03ago2020 22:43:20.276] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8305575369000437
+Dir Y: -0.571601255506277
+Dir Z: 0.8254125079512596
+[03ago2020 22:43:21.011] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8130591855199327
+Dir Y: -0.5408388875370207
+Dir Z: 0.9217778670176386
+[03ago2020 22:43:21.025] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8129850367307663
+Dir Y: -0.540787505209446
+Dir Z: 0.9216900088787079
+[03ago2020 22:43:21.608] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8587306608935137
+Dir Y: -0.49717842521381783
+Dir Z: 0.7379787683051404
+[03ago2020 22:43:21.630] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8586487871706487
+Dir Y: -0.4971037547886372
+Dir Z: 0.7379212571084499
+[03ago2020 22:43:22.260] [Server thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8753245870062756
+Dir Y: -0.45798211091859997
+Dir Z: 0.6735808550632925
+[03ago2020 22:43:22.281] [Render thread/INFO] [STDOUT/]: [com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity:tick:184]: 
+Dir X: 3.8610000371932984
+Dir Y: -0.45787500441074375
+Dir Z: 0.6735712564885615
+[03ago2020 22:44:05.306] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[03ago2020 22:44:05.368] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[03ago2020 22:44:05.368] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[03ago2020 22:44:05.386] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[03ago2020 22:44:05.439] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[03ago2020 22:44:05.440] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[03ago2020 22:44:05.441] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[03ago2020 22:44:05.441] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'TEST'/minecraft:overworld
+[03ago2020 22:44:06.686] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (TEST): All chunks are saved
+[03ago2020 22:44:06.725] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (TEST): All chunks are saved

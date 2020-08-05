@@ -28,6 +28,20 @@ public class InitItems
 			ITEMS.register("bullet_cal_45", () -> new Item(new Item.Properties().group(CustomGunsMod.AMMO_TAB)));
 
 	
+	/*===============*/
+	/*ITEMS GUN PARTS*/
+	/*===============*/
+	public static final RegistryObject<Item> PIPE_CAL_45 = 
+			ITEMS.register("pipe_cal_45", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	public static final RegistryObject<Item> BARREL_CAL_45_LIGHT = 
+			ITEMS.register("barrel_cal_45_light", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	public static final RegistryObject<Item> BARREL_CAL_45_MEDIUM = 
+			ITEMS.register("barrel_cal_45_medium", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	public static final RegistryObject<Item> BARREL_CAL_45_HEAVY = 
+			ITEMS.register("barrel_cal_45_heavy", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	
+	
+	
 	/*==========*/
 	/*ITEMS GUNS*/
 	/*==========*/
