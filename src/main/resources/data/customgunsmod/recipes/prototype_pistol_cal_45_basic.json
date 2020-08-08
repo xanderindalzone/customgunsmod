@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "Bb ",
+    " G ",
+    " M "
+  ],
+  "key": {
+    "B": {
+      "item": "customgunsmod:barrel_cal_45_light"
+    },
+    "b": {
+      "item": "customgunsmod:gun_body_light"
+    },
+    "G": {
+      "item": "customgunsmod:gun_grip"
+    },
+    "M": {
+      "item": "customgunsmod:mag_cal_45_small"
+    }
+  },
+  "result": {
+    "item": "customgunsmod:pistol_cal_45_prototype_basic"
+  }
+}

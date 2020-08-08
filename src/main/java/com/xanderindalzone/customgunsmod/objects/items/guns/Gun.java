@@ -63,6 +63,7 @@ public class Gun extends Item
 	
 	public GunTypes gun_type;
 	public GunFireTypes gun_fire_type;
+	public GunCaliberTypes gun_caliber_type;
 	public int gun_burst_shots=1;
 	public Item ammo_used;
 	public float gun_damage;
@@ -126,6 +127,12 @@ public class Gun extends Item
 	{
 		if(this.gun_fire_type == GunFireTypes.AUTOMATIC) {return 0;}
 		else {return 72000;}
+	}
+	
+	@Override
+	public void onCreated(ItemStack stack, World worldIn, PlayerEntity playerIn) 
+	{
+		stack.damageItem(this.gun_mag, playerIn, null);
 	}
 	
 	public void setAiming(PlayerEntity player, ItemStack gunStack, boolean value) //1 = AIMING 

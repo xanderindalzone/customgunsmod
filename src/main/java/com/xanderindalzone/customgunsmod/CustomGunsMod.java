@@ -9,6 +9,7 @@ import net.minecraft.client.renderer.entity.PlayerRenderer;
 import net.minecraft.client.renderer.entity.model.PlayerModel;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.entity.EntityType;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.RenderBlockOverlayEvent;
@@ -32,6 +33,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.glfw.GLFW;
 
+import com.google.common.collect.Ordering;
 import com.xanderindalzone.customgunsmod.creativetabs.AmmoItemGroup;
 import com.xanderindalzone.customgunsmod.creativetabs.CustomBlocksItemGroup;
 import com.xanderindalzone.customgunsmod.creativetabs.GunPartsGroup;
@@ -43,9 +45,11 @@ import com.xanderindalzone.customgunsmod.init.InitEntities;
 import com.xanderindalzone.customgunsmod.init.InitItems;
 import com.xanderindalzone.customgunsmod.init.InitKeys;
 import com.xanderindalzone.customgunsmod.init.InitSounds;
+import com.xanderindalzone.customgunsmod.init.SortedItemList;
 import com.xanderindalzone.customgunsmod.packets.PacketHandler;
 import com.xanderindalzone.customgunsmod.renderers.BulletRender;
 
+import java.util.Comparator;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -66,6 +70,10 @@ public class CustomGunsMod
 	public static final CustomBlocksItemGroup CUSTOM_BLOCKS_TAB = new CustomBlocksItemGroup("custom_blocks");
 
 	
+	/*===================*/
+	/*CREATIVE TAB SORTER*/
+	/*===================*/
+	public Comparator<ItemStack> tabSorter;
 	
 	
 	
@@ -82,6 +90,7 @@ public class CustomGunsMod
     	InitBlocks.BLOCKS.register(modEventBus);
     	InitEntities.ENTITIES.register(modEventBus);
     	InitSounds.SOUNDS.register(modEventBus);
+    	
 
     	
         // Register the setup method for modloading
@@ -102,15 +111,13 @@ public class CustomGunsMod
     
     
     
-    
-    
-    
-    
-    
     private void setup(final FMLCommonSetupEvent event)
     {
     	PacketHandler.registerPackets();
     	InitCapabilities.registerCapabilities();
+    	
+    	SortedItemList.initSortedList();
+    	tabSorter = Ordering.explicit(SortedItemList.sortedList).onResultOf(ItemStack::getItem);
     }
     
 

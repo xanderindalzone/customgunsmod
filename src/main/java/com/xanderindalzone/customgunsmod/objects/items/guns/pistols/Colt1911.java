@@ -2,6 +2,7 @@ package com.xanderindalzone.customgunsmod.objects.items.guns.pistols;
 
 import com.xanderindalzone.customgunsmod.init.InitItems;
 import com.xanderindalzone.customgunsmod.objects.items.guns.Gun;
+import com.xanderindalzone.customgunsmod.objects.items.guns.GunCaliberTypes;
 import com.xanderindalzone.customgunsmod.objects.items.guns.GunFireTypes;
 import com.xanderindalzone.customgunsmod.objects.items.guns.GunTypes;
 
@@ -21,6 +22,7 @@ public class Colt1911 extends Gun
 		
 		gun_type=GunTypes.PISTOL;
 		gun_fire_type=GunFireTypes.SEMI_AUTOMATIC;
+		gun_caliber_type=GunCaliberTypes.CAL_45;
 		this.gun_mag=gun_ammo_capacity;
 		this.ammo_used=InitItems.BULLET_CAL_45.get(); //Init.BULLET_CAL_45 OLD
 		this.gun_damage=4;

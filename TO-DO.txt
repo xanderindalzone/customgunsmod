@@ -1,7 +1,10 @@
+NOTES:
+
+- Might crash because the fill() itemgroup method is called before the comparator is initialized
+
 FIXES:
 
-- GAME CRASHES WHEN GUN IS IN LEFT HAND AND YOU RIGHT CLICK
+
 
 TO-DO:
 
-- GUN SHOWOFF
