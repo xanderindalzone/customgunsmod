@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "IIB",
+    "DDD"
+  ],
+  "key": {
+    "B": {
+      "item": "customgunsmod:gun_body_medium"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "customgunsmod:gun_body_heavy"
+  }
+}

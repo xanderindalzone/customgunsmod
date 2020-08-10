@@ -1,0 +1,13 @@
+[10ago2020 00:01:21.883] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.slime.squish_small
+[10ago2020 00:02:02.594] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[10ago2020 00:02:02.727] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[10ago2020 00:02:04.116] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[10ago2020 00:02:04.214] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[10ago2020 00:02:04.215] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[10ago2020 00:02:04.318] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[10ago2020 00:02:04.397] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[10ago2020 00:02:04.398] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[10ago2020 00:02:04.398] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[10ago2020 00:02:04.398] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[10ago2020 00:02:04.736] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[10ago2020 00:02:04.776] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved

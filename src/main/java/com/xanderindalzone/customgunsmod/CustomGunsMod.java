@@ -37,6 +37,7 @@ import com.google.common.collect.Ordering;
 import com.xanderindalzone.customgunsmod.creativetabs.AmmoItemGroup;
 import com.xanderindalzone.customgunsmod.creativetabs.CustomBlocksItemGroup;
 import com.xanderindalzone.customgunsmod.creativetabs.GunPartsGroup;
+import com.xanderindalzone.customgunsmod.creativetabs.GunPrototypesItemGroup;
 import com.xanderindalzone.customgunsmod.creativetabs.GunsItemGroup;
 import com.xanderindalzone.customgunsmod.entities.projectiles.PistolBulletEntity;
 import com.xanderindalzone.customgunsmod.init.InitBlocks;
@@ -66,6 +67,7 @@ public class CustomGunsMod
 	/*=============*/
 	public static final GunsItemGroup GUNS_TAB = new GunsItemGroup("guns");
 	public static final AmmoItemGroup AMMO_TAB = new AmmoItemGroup("ammo");
+	public static final GunPrototypesItemGroup GUN_PROTOTYPES_TAB = new GunPrototypesItemGroup("gun_prototypes");
 	public static final GunPartsGroup GUN_PARTS_TAB = new GunPartsGroup("gun_parts");
 	public static final CustomBlocksItemGroup CUSTOM_BLOCKS_TAB = new CustomBlocksItemGroup("custom_blocks");
 

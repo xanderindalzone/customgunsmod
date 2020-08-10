@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "IIB",
+    "GGG"
+  ],
+  "key": {
+    "B": {
+      "item": "customgunsmod:gun_body_light"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "customgunsmod:gun_body_medium"
+  }
+}

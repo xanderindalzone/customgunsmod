@@ -2,6 +2,7 @@
     //CREATIVE_TABS
     "itemGroup.guns": "Guns",
 	"itemGroup.ammo": "Ammo",
+	"itemGroup.gun_prototypes": "Gun Prototypes",
 	"itemGroup.gun_parts": "Gun Parts",
 	"itemGroup.custom_blocks": "Custom Blocks",
     
@@ -11,7 +12,7 @@
     "item.customgunsmod.pistol_colt_1911": "Colt 1911",
     
     //Prototype Guns
-    "item.customgunsmod.pistol_cal_45_prototype_basic": "Cal. 45 Pistol Basic Prototype",
+    "item.customgunsmod.prototype_cal_45_pistol_basic": "Cal. 45 Pistol Basic Prototype",
     //=====================
     
     //Bullets
@@ -35,7 +36,7 @@
     "item.customgunsmod.gun_body_heavy": "Heavy Gun Body",
     
     //Barrels
-    "item.customgunsmod.barrel_cal_45_light": "Cal .45 Light",
+    "item.customgunsmod.barrel_cal_45_light": "Cal .45 Light Barrel",
     "item.customgunsmod.barrel_cal_45_medium": "Cal .45 Medium Barrel",
     "item.customgunsmod.barrel_cal_45_heavy": "Cal .45 Heavy Barrel",
     

@@ -1,0 +1,34 @@
+{
+  "shot_colt1911": {
+    "category": "block",
+    "sounds": [ "customgunsmod:shot_colt1911" ]
+  },
+  "reload_colt1911": {
+    "category": "block",
+    "sounds": [ "customgunsmod:reload_colt1911" ]
+  },
+  "reload_colt1911_cock": {
+    "category": "block",
+    "sounds": [ "customgunsmod:reload_colt1911_cock" ]
+  },
+  "no_ammo_click": {
+    "category": "block",
+    "sounds": [ "customgunsmod:no_ammo_click" ]
+  },
+  "hit_marker": {
+    "category": "block",
+    "sounds": [ "customgunsmod:hit_marker" ]
+  },
+  "kill": {
+    "category": "block",
+    "sounds": [ "customgunsmod:kill" ]
+  },
+  "bullet_ground_impact": {
+    "category": "block",
+    "sounds": [ "customgunsmod:bullet_ground_impact" ]
+  },
+  "bullet_glass_impact": {
+    "category": "block",
+    "sounds": [ "customgunsmod:bullet_glass_impact" ]
+  }
+}

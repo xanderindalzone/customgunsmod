@@ -18,7 +18,7 @@ fullscreen:false
 bobView:true
 toggleCrouch:false
 toggleSprint:true
-mouseSensitivity:0.6
+mouseSensitivity:0.6000000238418579
 fov:0.5
 gamma:0.0
 renderDistance:20
@@ -30,7 +30,7 @@ fancyGraphics:true
 ao:0
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:[]
+resourcePacks:["vanilla","mod_resources"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us

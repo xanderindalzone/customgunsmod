@@ -1,0 +1,57 @@
+{
+    //CREATIVE_TABS
+    "itemGroup.guns": "Guns",
+	"itemGroup.ammo": "Ammo",
+	"itemGroup.gun_prototypes": "Gun Prototypes",
+	"itemGroup.gun_parts": "Gun Parts",
+	"itemGroup.custom_blocks": "Custom Blocks",
+    
+    //ITEMS
+    //=====================
+    //Guns
+    "item.customgunsmod.pistol_colt_1911": "Colt 1911",
+    
+    //Prototype Guns
+    "item.customgunsmod.prototype_cal_45_pistol_basic": "Cal. 45 Pistol Basic Prototype",
+    //=====================
+    
+    //Bullets
+    "item.customgunsmod.bullet_cal_45": "Cal .45 Bullet",
+    
+    //GUN PARTS
+    //===============
+    
+    //Grips
+    "item.customgunsmod.gun_grip": "Gun Grip",
+    
+    //Gun Butts
+    "item.customgunsmod.gun_butt": "Gun Butt",
+    
+    //Pipes
+    "item.customgunsmod.pipe_cal_45": "Cal .45 Pipe",
+    
+    //Gun Bodies
+    "item.customgunsmod.gun_body_light": "Light Gun Body",
+    "item.customgunsmod.gun_body_medium": "Medium Gun Body",
+    "item.customgunsmod.gun_body_heavy": "Heavy Gun Body",
+    
+    //Barrels
+    "item.customgunsmod.barrel_cal_45_light": "Cal .45 Light",
+    "item.customgunsmod.barrel_cal_45_medium": "Cal .45 Medium Barrel",
+    "item.customgunsmod.barrel_cal_45_heavy": "Cal .45 Heavy Barrel",
+    
+    //Mags
+    "item.customgunsmod.mag_cal_45_small": "Cal. 45 Small Mag",
+    "item.customgunsmod.mag_cal_45_big": "Cal. 45 Big Mag",
+    "item.customgunsmod.mag_cal_45_drum": "Cal. 45 Drum Mag",
+    "item.customgunsmod.mag_cal_45_box": "Cal. 45 Box Mag",
+    //=====================
+    
+    //BLOCKS
+    "block.customgunsmod.armored_glass_block": "Armored Glass",
+    
+    
+    //KEYS_BINDINGS
+    "key.categories.customgunsmod": "Custom Gun Keys",
+    "key.reload": "Reload Gun"
+}

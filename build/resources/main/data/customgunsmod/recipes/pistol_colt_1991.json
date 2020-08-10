@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ibi",
+    "bPb",
+    "rir"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_nugget"
+    },
+    "r": {
+      "item": "minecraft:brown_dye"
+    },
+    "b": {
+      "item": "minecraft:black_dye"
+    },
+    "P": {
+      "item": "customgunsmod:prototype_cal_45_pistol_basic"
+    }
+  },
+  "result": {
+    "item": "customgunsmod:pistol_colt_1911"
+  }
+}
