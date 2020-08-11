@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "customgunsmod:items/mag_cal_45_box",
-		"particle": "customgunsmod:items/mag_cal_45_box"
+		"0": "customgunsmod:items/mag_cal_45",
+		"particle": "customgunsmod:items/mag_cal_45"
 	},
 	"elements": [
 		{

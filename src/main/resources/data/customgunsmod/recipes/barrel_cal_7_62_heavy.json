@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "BPP",
+    "DDD"
+  ],
+  "key": {
+    "B": {
+      "item": "customgunsmod:barrel_cal_7_62_medium"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "P": {
+      "item": "customgunsmod:pipe_cal_7_62"
+    }
+  },
+  "result": {
+    "item": "customgunsmod:barrel_cal_7_62_heavy"
+  }
+}

@@ -1,17 +1,17 @@
-[10ago2020 11:40:15.112] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20200515.085601, --fml.mcVersion, 1.15.2, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 31.2.0, --version, MOD_DEV, --assetIndex, 1.15, --assetsDir, C:\Users\alexs\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
-[10ago2020 11:40:15.121] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 5.1.2+70+master.2845bb9 starting: java version 1.8.0_251 by Oracle Corporation
-[10ago2020 11:40:17.639] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[10ago2020 11:40:21.904] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\alexs\.gradle\caches\forge_gradle\assets, --assetIndex, 1.15, --username, Dev, --accessToken, ????????, --userProperties, {}]
-[10ago2020 11:40:28.679] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[10ago2020 11:40:54.571] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
-[10ago2020 11:40:56.532] [modloading-worker-3/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 31.2.0, for MC 1.15.2 with MCP 20200515.085601
-[10ago2020 11:40:56.532] [modloading-worker-3/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v31.2.0 Initialized
-[10ago2020 11:40:57.780] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity customgunsmod:bullet_cal_45_entity
-[10ago2020 11:41:02.687] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
-[10ago2020 11:41:02.893] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
-[10ago2020 11:41:03.595] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [customgunsmod] Starting version check at http://example.com/
-[10ago2020 11:41:03.598] [modloading-worker-1/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: Got game settings net.minecraft.client.GameSettings@24c9ba28
-[10ago2020 11:41:04.085] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+[11ago2020 22:59:55.023] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20200515.085601, --fml.mcVersion, 1.15.2, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 31.2.0, --version, MOD_DEV, --assetIndex, 1.15, --assetsDir, C:\Users\alexs\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[11ago2020 22:59:55.030] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 5.1.2+70+master.2845bb9 starting: java version 1.8.0_251 by Oracle Corporation
+[11ago2020 22:59:57.483] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[11ago2020 23:00:00.852] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\alexs\.gradle\caches\forge_gradle\assets, --assetIndex, 1.15, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[11ago2020 23:00:06.761] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[11ago2020 23:00:29.461] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[11ago2020 23:00:32.674] [modloading-worker-3/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 31.2.0, for MC 1.15.2 with MCP 20200515.085601
+[11ago2020 23:00:32.675] [modloading-worker-3/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v31.2.0 Initialized
+[11ago2020 23:00:33.365] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity customgunsmod:bullet_cal_45_entity
+[11ago2020 23:00:40.107] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[11ago2020 23:00:40.330] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[11ago2020 23:00:40.560] [modloading-worker-1/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: Got game settings net.minecraft.client.GameSettings@4e78f4da
+[11ago2020 23:00:40.565] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [customgunsmod] Starting version check at http://example.com/
+[11ago2020 23:00:40.846] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
 java.net.UnknownHostException: example.com
 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
 	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
@@ -35,121 +35,87 @@ java.net.UnknownHostException: example.com
 	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:206) ~[?:?]
 	at java.lang.Iterable.forEach(Unknown Source) [?:1.8.0_251]
 	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:157) [?:?]
-[10ago2020 11:41:04.089] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[10ago2020 11:41:10.369] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 31.2.0 Target: null
-[10ago2020 11:41:15.184] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:bullet_cal_9#inventory' referenced from: customgunsmod:bullet_cal_9#inventory: java.io.FileNotFoundException: customgunsmod:models/item/bullet_cal_9.json
-[10ago2020 11:41:15.187] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:bullet_cal_5_56#inventory' referenced from: customgunsmod:bullet_cal_5_56#inventory: java.io.FileNotFoundException: customgunsmod:models/item/bullet_cal_5_56.json
-[10ago2020 11:41:15.190] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:bullet_cal_7_62#inventory' referenced from: customgunsmod:bullet_cal_7_62#inventory: java.io.FileNotFoundException: customgunsmod:models/item/bullet_cal_7_62.json
-[10ago2020 11:41:15.192] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:bullet_cal_338#inventory' referenced from: customgunsmod:bullet_cal_338#inventory: java.io.FileNotFoundException: customgunsmod:models/item/bullet_cal_338.json
-[10ago2020 11:41:15.195] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:bullet_cal_50#inventory' referenced from: customgunsmod:bullet_cal_50#inventory: java.io.FileNotFoundException: customgunsmod:models/item/bullet_cal_50.json
-[10ago2020 11:41:15.196] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:bullet_cal_12#inventory' referenced from: customgunsmod:bullet_cal_12#inventory: java.io.FileNotFoundException: customgunsmod:models/item/bullet_cal_12.json
-[10ago2020 11:41:15.270] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:pipe_cal_9#inventory' referenced from: customgunsmod:pipe_cal_9#inventory: java.io.FileNotFoundException: customgunsmod:models/item/pipe_cal_9.json
-[10ago2020 11:41:15.276] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:pipe_cal_5_56#inventory' referenced from: customgunsmod:pipe_cal_5_56#inventory: java.io.FileNotFoundException: customgunsmod:models/item/pipe_cal_5_56.json
-[10ago2020 11:41:15.280] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:pipe_cal_7_62#inventory' referenced from: customgunsmod:pipe_cal_7_62#inventory: java.io.FileNotFoundException: customgunsmod:models/item/pipe_cal_7_62.json
-[10ago2020 11:41:15.282] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:pipe_cal_338#inventory' referenced from: customgunsmod:pipe_cal_338#inventory: java.io.FileNotFoundException: customgunsmod:models/item/pipe_cal_338.json
-[10ago2020 11:41:15.283] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:pipe_cal_50#inventory' referenced from: customgunsmod:pipe_cal_50#inventory: java.io.FileNotFoundException: customgunsmod:models/item/pipe_cal_50.json
-[10ago2020 11:41:15.285] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:pipe_cal_12#inventory' referenced from: customgunsmod:pipe_cal_12#inventory: java.io.FileNotFoundException: customgunsmod:models/item/pipe_cal_12.json
-[10ago2020 11:41:15.516] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_5_56_light#inventory' referenced from: customgunsmod:barrel_cal_5_56_light#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_5_56_light.json
-[10ago2020 11:41:15.518] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_5_56_medium#inventory' referenced from: customgunsmod:barrel_cal_5_56_medium#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_5_56_medium.json
-[10ago2020 11:41:15.519] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_5_56_heavy#inventory' referenced from: customgunsmod:barrel_cal_5_56_heavy#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_5_56_heavy.json
-[10ago2020 11:41:15.521] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_7_62_light#inventory' referenced from: customgunsmod:barrel_cal_7_62_light#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_7_62_light.json
-[10ago2020 11:41:15.523] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_7_62_medium#inventory' referenced from: customgunsmod:barrel_cal_7_62_medium#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_7_62_medium.json
-[10ago2020 11:41:15.525] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_7_62_heavy#inventory' referenced from: customgunsmod:barrel_cal_7_62_heavy#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_7_62_heavy.json
-[10ago2020 11:41:15.527] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_338_light#inventory' referenced from: customgunsmod:barrel_cal_338_light#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_338_light.json
-[10ago2020 11:41:15.529] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_338_medium#inventory' referenced from: customgunsmod:barrel_cal_338_medium#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_338_medium.json
-[10ago2020 11:41:15.530] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_338_heavy#inventory' referenced from: customgunsmod:barrel_cal_338_heavy#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_338_heavy.json
-[10ago2020 11:41:15.531] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_50_light#inventory' referenced from: customgunsmod:barrel_cal_50_light#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_50_light.json
-[10ago2020 11:41:15.532] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_50_medium#inventory' referenced from: customgunsmod:barrel_cal_50_medium#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_50_medium.json
-[10ago2020 11:41:15.533] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_50_heavy#inventory' referenced from: customgunsmod:barrel_cal_50_heavy#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_50_heavy.json
-[10ago2020 11:41:15.534] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_12_light#inventory' referenced from: customgunsmod:barrel_cal_12_light#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_12_light.json
-[10ago2020 11:41:15.535] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_12_medium#inventory' referenced from: customgunsmod:barrel_cal_12_medium#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_12_medium.json
-[10ago2020 11:41:15.536] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:barrel_cal_12_heavy#inventory' referenced from: customgunsmod:barrel_cal_12_heavy#inventory: java.io.FileNotFoundException: customgunsmod:models/item/barrel_cal_12_heavy.json
-[10ago2020 11:41:15.695] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_9_small#inventory' referenced from: customgunsmod:mag_cal_9_small#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_9_small.json
-[10ago2020 11:41:15.696] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_9_big#inventory' referenced from: customgunsmod:mag_cal_9_big#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_9_big.json
-[10ago2020 11:41:15.697] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_9_drum#inventory' referenced from: customgunsmod:mag_cal_9_drum#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_9_drum.json
-[10ago2020 11:41:15.698] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_9_box#inventory' referenced from: customgunsmod:mag_cal_9_box#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_9_box.json
-[10ago2020 11:41:15.699] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_5_56_small#inventory' referenced from: customgunsmod:mag_cal_5_56_small#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_5_56_small.json
-[10ago2020 11:41:15.700] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_5_56_big#inventory' referenced from: customgunsmod:mag_cal_5_56_big#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_5_56_big.json
-[10ago2020 11:41:15.702] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_5_56_drum#inventory' referenced from: customgunsmod:mag_cal_5_56_drum#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_5_56_drum.json
-[10ago2020 11:41:15.704] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_5_56_box#inventory' referenced from: customgunsmod:mag_cal_5_56_box#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_5_56_box.json
-[10ago2020 11:41:15.706] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_7_62_small#inventory' referenced from: customgunsmod:mag_cal_7_62_small#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_7_62_small.json
-[10ago2020 11:41:15.707] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_7_62_big#inventory' referenced from: customgunsmod:mag_cal_7_62_big#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_7_62_big.json
-[10ago2020 11:41:15.709] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_7_62_drum#inventory' referenced from: customgunsmod:mag_cal_7_62_drum#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_7_62_drum.json
-[10ago2020 11:41:15.710] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_7_62_box#inventory' referenced from: customgunsmod:mag_cal_7_62_box#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_7_62_box.json
-[10ago2020 11:41:15.711] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_338_small#inventory' referenced from: customgunsmod:mag_cal_338_small#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_338_small.json
-[10ago2020 11:41:15.712] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_338_big#inventory' referenced from: customgunsmod:mag_cal_338_big#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_338_big.json
-[10ago2020 11:41:15.713] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_338_drum#inventory' referenced from: customgunsmod:mag_cal_338_drum#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_338_drum.json
-[10ago2020 11:41:15.714] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_338_box#inventory' referenced from: customgunsmod:mag_cal_338_box#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_338_box.json
-[10ago2020 11:41:15.715] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_50_small#inventory' referenced from: customgunsmod:mag_cal_50_small#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_50_small.json
-[10ago2020 11:41:15.716] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_50_big#inventory' referenced from: customgunsmod:mag_cal_50_big#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_50_big.json
-[10ago2020 11:41:15.717] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_50_drum#inventory' referenced from: customgunsmod:mag_cal_50_drum#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_50_drum.json
-[10ago2020 11:41:15.718] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_50_box#inventory' referenced from: customgunsmod:mag_cal_50_box#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_50_box.json
-[10ago2020 11:41:15.724] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_12_small#inventory' referenced from: customgunsmod:mag_cal_12_small#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_12_small.json
-[10ago2020 11:41:15.726] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_12_big#inventory' referenced from: customgunsmod:mag_cal_12_big#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_12_big.json
-[10ago2020 11:41:15.728] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_12_drum#inventory' referenced from: customgunsmod:mag_cal_12_drum#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_12_drum.json
-[10ago2020 11:41:15.728] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'customgunsmod:mag_cal_12_box#inventory' referenced from: customgunsmod:mag_cal_12_box#inventory: java.io.FileNotFoundException: customgunsmod:models/item/mag_cal_12_box.json
-[10ago2020 11:41:16.657] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/bullet_cal_45
-[10ago2020 11:41:16.658] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/prototype_cal_45_pistol_basic
-[10ago2020 11:41:16.658] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/pistol_colt_1911
-[10ago2020 11:41:16.658] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/pistol_colt_1911_aim
-[10ago2020 11:41:16.658] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/pistol_colt_1911_crouch
-[10ago2020 11:41:16.734] [Server-Worker-8/ERROR] [net.minecraft.client.renderer.texture.AtlasTexture/]: Using missing texture, unable to load customgunsmod:textures/items/gun_body_medium.png : java.io.FileNotFoundException: customgunsmod:textures/items/gun_body_medium.png
-[10ago2020 11:41:17.180] [Server-Worker-2/ERROR] [net.minecraft.client.renderer.texture.AtlasTexture/]: Using missing texture, unable to load customgunsmod:textures/items/barrel_cal_9_heavy.png : java.io.FileNotFoundException: customgunsmod:textures/items/barrel_cal_9_heavy.png
-[10ago2020 11:41:17.318] [Server-Worker-8/ERROR] [net.minecraft.client.renderer.texture.AtlasTexture/]: Using missing texture, unable to load customgunsmod:textures/items/barrel_cal_9_medium.png : java.io.FileNotFoundException: customgunsmod:textures/items/barrel_cal_9_medium.png
-[10ago2020 11:41:18.020] [Server-Worker-9/ERROR] [net.minecraft.client.renderer.texture.AtlasTexture/]: Using missing texture, unable to load customgunsmod:textures/items/barrel_cal_9_light.png : java.io.FileNotFoundException: customgunsmod:textures/items/barrel_cal_9_light.png
-[10ago2020 11:41:20.817] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
-[10ago2020 11:41:20.818] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
-[10ago2020 11:41:21.078] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[10ago2020 11:41:21.309] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x4 minecraft:textures/atlas/signs.png-atlas
-[10ago2020 11:41:21.310] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[10ago2020 11:41:21.311] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[10ago2020 11:41:21.312] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[10ago2020 11:41:21.313] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[10ago2020 11:41:21.314] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[10ago2020 11:41:22.845] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[10ago2020 11:41:22.847] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[10ago2020 11:41:22.848] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[10ago2020 11:41:24.381] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[10ago2020 12:12:47.906] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[10ago2020 12:12:47.907] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[10ago2020 12:12:47.908] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[10ago2020 12:12:47.909] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[10ago2020 12:12:47.910] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[10ago2020 12:12:48.167] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.15.2
-[10ago2020 12:12:48.168] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
-[10ago2020 12:12:48.503] [Server thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this SERVER instance
-[10ago2020 12:12:48.828] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar
-[10ago2020 12:12:51.339] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 6 recipes
-[10ago2020 12:12:53.728] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 825 advancements
-[10ago2020 12:12:54.732] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[10ago2020 12:12:55.836] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[10ago2020 12:12:55.836] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[10ago2020 12:12:55.858] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[10ago2020 12:12:56.269] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 10%
-[10ago2020 12:12:58.032] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: ====================================
-[10ago2020 12:12:58.033] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: Loading CustomGunsMod on the server!
-[10ago2020 12:12:58.033] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: ====================================
-[10ago2020 12:12:58.039] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 3294 ms
-[10ago2020 12:12:58.503] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[10ago2020 12:12:58.506] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[10ago2020 12:12:58.510] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 19, from 10
-[10ago2020 12:13:02.355] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
-[10ago2020 12:13:02.507] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@250539fb
-[10ago2020 12:13:02.535] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:d907651d] logged in with entity id 141 at (-170.91568335420448, 4.0, -131.37883518971512)
-[10ago2020 12:13:02.635] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[10ago2020 12:13:03.604] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[10ago2020 12:13:03.627] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[10ago2020 12:13:04.002] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 0 advancements
-[10ago2020 12:13:04.559] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2070ms or 41 ticks behind
-[10ago2020 12:13:06.014] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.slime.squish_small
-[10ago2020 12:13:06.015] [Render thread/WARN] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.slime.jump_small
-[10ago2020 12:13:34.642] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[10ago2020 12:13:34.668] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
-[10ago2020 12:13:34.669] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[10ago2020 12:13:34.696] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
-[10ago2020 12:13:34.847] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[10ago2020 12:13:34.850] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[10ago2020 12:13:34.850] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[10ago2020 12:13:34.851] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[10ago2020 12:13:36.219] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[10ago2020 12:13:36.249] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[11ago2020 23:00:40.848] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[11ago2020 23:00:42.686] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 31.2.0 Target: null
+[11ago2020 23:00:50.623] [Server-Worker-7/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/bullet_cal_45
+[11ago2020 23:00:50.624] [Server-Worker-7/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/prototype_cal_45_pistol_basic
+[11ago2020 23:00:50.624] [Server-Worker-7/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/pistol_colt_1911
+[11ago2020 23:00:50.624] [Server-Worker-7/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/pistol_colt_1911_aim
+[11ago2020 23:00:50.624] [Server-Worker-7/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/pistol_colt_1911_crouch
+[11ago2020 23:00:53.420] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[11ago2020 23:00:53.422] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[11ago2020 23:00:53.723] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[11ago2020 23:00:53.943] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x4 minecraft:textures/atlas/signs.png-atlas
+[11ago2020 23:00:53.943] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[11ago2020 23:00:53.944] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[11ago2020 23:00:53.946] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[11ago2020 23:00:53.946] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[11ago2020 23:00:53.947] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[11ago2020 23:00:54.920] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[11ago2020 23:00:54.922] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[11ago2020 23:00:54.923] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[11ago2020 23:00:56.549] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[11ago2020 23:01:19.039] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11ago2020 23:01:19.041] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11ago2020 23:01:19.042] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11ago2020 23:01:19.044] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11ago2020 23:01:19.045] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11ago2020 23:01:19.375] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.15.2
+[11ago2020 23:01:19.376] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
+[11ago2020 23:01:19.730] [Server thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this SERVER instance
+[11ago2020 23:01:20.512] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar
+[11ago2020 23:01:23.789] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 6 recipes
+[11ago2020 23:01:26.855] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 825 advancements
+[11ago2020 23:01:27.999] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[11ago2020 23:01:29.186] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[11ago2020 23:01:29.187] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[11ago2020 23:01:29.213] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[11ago2020 23:01:29.730] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 61%
+[11ago2020 23:01:30.270] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: ====================================
+[11ago2020 23:01:30.271] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: Loading CustomGunsMod on the server!
+[11ago2020 23:01:30.271] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: ====================================
+[11ago2020 23:01:30.289] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 2079 ms
+[11ago2020 23:01:30.892] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[11ago2020 23:01:30.894] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[11ago2020 23:01:30.899] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 19, from 10
+[11ago2020 23:01:35.268] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[11ago2020 23:01:35.501] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@2999617f
+[11ago2020 23:01:35.541] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:e2ddfbca] logged in with entity id 132 at (-168.86470477349667, 4.0, -121.30000001192091)
+[11ago2020 23:01:35.609] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[11ago2020 23:01:37.707] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2349ms or 46 ticks behind
+[11ago2020 23:01:38.887] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[11ago2020 23:01:38.938] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[11ago2020 23:01:39.553] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 113 advancements
+[11ago2020 23:02:07.113] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2005ms or 40 ticks behind
+[11ago2020 23:02:32.663] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Incorrect argument for command
+[11ago2020 23:02:32.663] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] /gamemode 0<--[HERE]
+[11ago2020 23:02:36.398] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[11ago2020 23:02:36.399] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Survival Mode
+[11ago2020 23:02:38.057] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[11ago2020 23:02:38.073] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[11ago2020 23:03:47.833] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[11ago2020 23:03:47.836] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Creative Mode
+[11ago2020 23:08:02.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[11ago2020 23:08:02.094] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Survival Mode
+[11ago2020 23:08:21.591] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Unknown item 'customgunsmod:bull'
+[11ago2020 23:08:21.591] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] /give Dev customgunsmod:bull<--[HERE]
+[11ago2020 23:08:30.195] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gave 64 [Cal .45 Bullet] to Dev]
+[11ago2020 23:08:30.219] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Gave 64 [Cal .45 Bullet] to Dev
+[11ago2020 23:08:50.358] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[11ago2020 23:08:50.374] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[11ago2020 23:09:00.090] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[11ago2020 23:09:00.091] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Creative Mode
+[11ago2020 23:09:30.822] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[11ago2020 23:09:30.825] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Survival Mode
+[11ago2020 23:10:00.434] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[11ago2020 23:10:00.435] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Creative Mode
+[11ago2020 23:10:11.431] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[11ago2020 23:10:11.471] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[11ago2020 23:10:11.471] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[11ago2020 23:10:11.487] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[11ago2020 23:10:11.520] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[11ago2020 23:10:11.521] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[11ago2020 23:10:11.521] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[11ago2020 23:10:11.521] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[11ago2020 23:10:11.912] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[11ago2020 23:10:11.957] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved

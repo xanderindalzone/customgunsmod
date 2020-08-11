@@ -54,45 +54,8 @@ public class InitItems
 	/*===============*/
 	/*ITEMS GUN PARTS*/
 	/*===============*/
-	
-	//Grips
+//==============================================================================================================
 	//--------------------
-	public static final RegistryObject<Item> GUN_GRIP = 
-			ITEMS.register("gun_grip", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
-	//Gun Butts
-	//--------------------
-	public static final RegistryObject<Item> GUN_BUTT = 
-			ITEMS.register("gun_butt", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
-	//Pipes
-	//--------------------
-	public static final RegistryObject<Item> PIPE_CAL_45 = 
-			ITEMS.register("pipe_cal_45", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
-	//TODO
-	public static final RegistryObject<Item> PIPE_CAL_9 = 
-			ITEMS.register("pipe_cal_9", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
-	//TODO
-	public static final RegistryObject<Item> PIPE_CAL_5_56 = 
-			ITEMS.register("pipe_cal_5_56", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
-	//TODO
-	public static final RegistryObject<Item> PIPE_CAL_7_62 = 
-			ITEMS.register("pipe_cal_7_62", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
-	//TODO
-	public static final RegistryObject<Item> PIPE_CAL_338 = 
-			ITEMS.register("pipe_cal_338", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
-	//TODO
-	public static final RegistryObject<Item> PIPE_CAL_50 = 
-			ITEMS.register("pipe_cal_50", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
-	//TODO
-	public static final RegistryObject<Item> PIPE_CAL_12 = 
-			ITEMS.register("pipe_cal_12", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
-	//Gun Bodies
-	//--------------------
-	public static final RegistryObject<Item> GUN_BODY_LIGHT = 
-			ITEMS.register("gun_body_light", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
-	public static final RegistryObject<Item> GUN_BODY_MEDIUM = 
-			ITEMS.register("gun_body_medium", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
-	public static final RegistryObject<Item> GUN_BODY_HEAVY = 
-			ITEMS.register("gun_body_heavy", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
 	//Barrels
 	//--------------------
 	public static final RegistryObject<Item> BARREL_CAL_45_LIGHT = 
@@ -155,6 +118,8 @@ public class InitItems
 	//TODO
 	public static final RegistryObject<Item> BARREL_CAL_12_HEAVY = 
 			ITEMS.register("barrel_cal_12_heavy", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+//==============================================================================================================
+	//--------------------
 	//Mags
 	//--------------------
 	public static final RegistryObject<Item> MAG_CAL_45_SMALL = 
@@ -237,6 +202,47 @@ public class InitItems
 	//TODO
 	public static final RegistryObject<Item> MAG_CAL_12_BOX = 
 			ITEMS.register("mag_cal_12_box", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+//==============================================================================================================
+	//--------------------
+	//Pipes
+	//--------------------
+	public static final RegistryObject<Item> PIPE_CAL_45 = 
+			ITEMS.register("pipe_cal_45", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	public static final RegistryObject<Item> PIPE_CAL_9 = 
+			ITEMS.register("pipe_cal_9", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	public static final RegistryObject<Item> PIPE_CAL_5_56 = 
+			ITEMS.register("pipe_cal_5_56", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	public static final RegistryObject<Item> PIPE_CAL_7_62 = 
+			ITEMS.register("pipe_cal_7_62", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	public static final RegistryObject<Item> PIPE_CAL_338 = 
+			ITEMS.register("pipe_cal_338", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	public static final RegistryObject<Item> PIPE_CAL_50 = 
+			ITEMS.register("pipe_cal_50", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	public static final RegistryObject<Item> PIPE_CAL_12 = 
+			ITEMS.register("pipe_cal_12", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+//==============================================================================================================
+	//--------------------
+	//Gun Bodies
+	//--------------------
+	public static final RegistryObject<Item> GUN_BODY_LIGHT = 
+			ITEMS.register("gun_body_light", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	public static final RegistryObject<Item> GUN_BODY_MEDIUM = 
+			ITEMS.register("gun_body_medium", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+	public static final RegistryObject<Item> GUN_BODY_HEAVY = 
+			ITEMS.register("gun_body_heavy", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+//==============================================================================================================
+	//--------------------
+	//Grips
+	//--------------------
+	public static final RegistryObject<Item> GUN_GRIP = 
+			ITEMS.register("gun_grip", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+//==============================================================================================================
+	//--------------------
+	//Gun Butts
+	//--------------------
+	public static final RegistryObject<Item> GUN_BUTT = 
+			ITEMS.register("gun_butt", () -> new Item(new Item.Properties().group(CustomGunsMod.GUN_PARTS_TAB)));
+//==============================================================================================================	
 	
 	/*==========*/
 	/*ITEMS GUNS*/

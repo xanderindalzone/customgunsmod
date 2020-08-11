@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IwI",
+    "d d",
+    "IwI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "d": {
+      "item": "minecraft:red_dye"
+    },
+    "w": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "result": {
+    "item": "customgunsmod:pipe_cal_12",
+    "count": 3
+  }
+}

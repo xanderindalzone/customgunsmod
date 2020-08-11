@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IrI",
+    "d d",
+    "IrI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "r": {
+      "item": "minecraft:red_dye"
+    },
+    "d": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "result": {
+    "item": "customgunsmod:pipe_cal_7_62",
+    "count": 3
+  }
+}

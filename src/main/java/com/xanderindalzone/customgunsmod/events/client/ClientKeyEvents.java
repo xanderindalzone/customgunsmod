@@ -59,13 +59,13 @@ public class ClientKeyEvents
 					TextRenderer.drawStringWithShadow(text1, x+10, y+20, 16730698);
 					TextRenderer.drawStringWithShadow(text2, x+10, y+30, 16777215);		
 				}
-				if(player.getCooldownTracker().hasCooldown(gun)) 
-				{
-					
-					String text3="Reloading!";
-					//System.out.println(text3);
-					TextRenderer.drawStringWithShadow(text3, x2+10, y2, 61256);
-				}
+//				if(player.getCooldownTracker().hasCooldown(gun)) 
+//				{
+//					
+//					String text3="Reloading!";
+//					//System.out.println(text3);
+//					TextRenderer.drawStringWithShadow(text3, x2+10, y2, 61256);
+//				}
 			}
 			else 
 			{

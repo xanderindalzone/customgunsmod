@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "customgunsmod:items/barrel_cal_9_medium",
-		"particle": "customgunsmod:items/barrel_cal_9_medium"
+		"1": "customgunsmod:items/barrel_cal_9",
+		"particle": "customgunsmod:items/barrel_cal_9"
 	},
 	"elements": [
 		{

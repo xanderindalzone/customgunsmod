@@ -1,0 +1,10 @@
+  
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "customgunsmod:armored_glass_block"
+  },
+  "result": "minecraft:obsidian",
+  "experience": 0.25,
+  "cookingtime": 50
+}
