@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "BPP",
+    "GGG"
+  ],
+  "key": {
+    "B": {
+      "item": "customgunsmod:barrel_cal_7_62_light"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "P": {
+      "item": "customgunsmod:pipe_cal_7_62"
+    }
+  },
+  "result": {
+    "item": "customgunsmod:barrel_cal_7_62_medium"
+  }
+}

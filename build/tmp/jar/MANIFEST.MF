@@ -3,7 +3,7 @@ Implementation-Title: customgunsmod
 Implementation-Version: 1.0
 Specification-Vendor: examplemodsareus
 Specification-Title: examplemod
-Implementation-Timestamp: 2020-08-08T21:42:03+0100
+Implementation-Timestamp: 2020-08-12T12:38:58+0100
 Specification-Version: 1
 Implementation-Vendor: examplemodsareus
 

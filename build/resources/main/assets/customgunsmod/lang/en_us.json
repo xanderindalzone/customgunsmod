@@ -12,7 +12,7 @@
     "item.customgunsmod.pistol_colt_1911": "Colt 1911",
     
     //Prototype Guns
-    "item.customgunsmod.prototype_cal_45_pistol_basic": "Cal. 45 Pistol Basic Prototype",
+    "item.customgunsmod.prototype_cal_45_pistol_basic": "Cal .45 Pistol Basic Prototype",
     //=====================
     
     //Bullets
@@ -21,30 +21,90 @@
     //GUN PARTS
     //===============
     
-    //Grips
-    "item.customgunsmod.gun_grip": "Gun Grip",
+    //Barrels
+    "item.customgunsmod.barrel_cal_45_light": "Cal .45 Light Barrel",
+    "item.customgunsmod.barrel_cal_45_medium": "Cal .45 Medium Barrel",
+    "item.customgunsmod.barrel_cal_45_heavy": "Cal .45 Heavy Barrel",
     
-    //Gun Butts
-    "item.customgunsmod.gun_butt": "Gun Butt",
+    "item.customgunsmod.barrel_cal_9_light": "Cal .9 Light Barrel",
+    "item.customgunsmod.barrel_cal_9_medium": "Cal .9 Medium Barrel",
+    "item.customgunsmod.barrel_cal_9_heavy": "Cal .9 Heavy Barrel",
+    
+    "item.customgunsmod.barrel_cal_5_56_light": "Cal .5'56 Light Barrel",
+    "item.customgunsmod.barrel_cal_5_56_medium": "Cal .5'56 Medium Barrel",
+    "item.customgunsmod.barrel_cal_5_56_heavy": "Cal .5'56 Heavy Barrel",
+    
+    "item.customgunsmod.barrel_cal_7_62_light": "Cal .7'62 Light Barrel",
+    "item.customgunsmod.barrel_cal_7_62_medium": "Cal .7'62 Medium Barrel",
+    "item.customgunsmod.barrel_cal_7_62_heavy": "Cal .7'62 Heavy Barrel",
+    
+    "item.customgunsmod.barrel_cal_338_light": "Cal .338 Light Barrel",
+    "item.customgunsmod.barrel_cal_338_medium": "Cal .338 Medium Barrel",
+    "item.customgunsmod.barrel_cal_338_heavy": "Cal .338 Heavy Barrel",
+    
+    "item.customgunsmod.barrel_cal_50_light": "Cal .50 Light Barrel",
+    "item.customgunsmod.barrel_cal_50_medium": "Cal .50 Medium Barrel",
+    "item.customgunsmod.barrel_cal_50_heavy": "Cal .50 Heavy Barrel",
+    
+    "item.customgunsmod.barrel_cal_12_light": "Cal .12 Light Barrel",
+    "item.customgunsmod.barrel_cal_12_medium": "Cal .12 Medium Barrel",
+    "item.customgunsmod.barrel_cal_12_heavy": "Cal .12 Heavy Barrel",
+    
+    //Mags
+    "item.customgunsmod.mag_cal_45_small": "Cal .45 Small Mag",
+    "item.customgunsmod.mag_cal_45_big": "Cal .45 Big Mag",
+    "item.customgunsmod.mag_cal_45_drum": "Cal .45 Drum Mag",
+    "item.customgunsmod.mag_cal_45_box": "Cal .45 Box Mag",
+    
+    "item.customgunsmod.mag_cal_9_small": "Cal .9 Small Mag",
+    "item.customgunsmod.mag_cal_9_big": "Cal .9 Big Mag",
+    "item.customgunsmod.mag_cal_9_drum": "Cal .9 Drum Mag",
+    "item.customgunsmod.mag_cal_9_box": "Cal .9 Box Mag",
+    
+    "item.customgunsmod.mag_cal_5_56_small": "Cal .5'56 Small Mag",
+    "item.customgunsmod.mag_cal_5_56_big": "Cal .5'56 Big Mag",
+    "item.customgunsmod.mag_cal_5_56_drum": "Cal .5'56 Drum Mag",
+    "item.customgunsmod.mag_cal_5_56_box": "Cal .5'56 Box Mag",
+    
+    "item.customgunsmod.mag_cal_7_62_small": "Cal .7'62 Small Mag",
+    "item.customgunsmod.mag_cal_7_62_big": "Cal .7'62 Big Mag",
+    "item.customgunsmod.mag_cal_7_62_drum": "Cal .7'62 Drum Mag",
+    "item.customgunsmod.mag_cal_7_62_box": "Cal .7'62 Box Mag",
+
+    "item.customgunsmod.mag_cal_338_small": "Cal .338 Small Mag",
+    "item.customgunsmod.mag_cal_338_big": "Cal .338 Big Mag",
+    "item.customgunsmod.mag_cal_338_drum": "Cal .338 Drum Mag",
+    "item.customgunsmod.mag_cal_338_box": "Cal .338 Box Mag",
+    
+    "item.customgunsmod.mag_cal_50_small": "Cal .50 Small Mag",
+    "item.customgunsmod.mag_cal_50_big": "Cal .50 Big Mag",
+    "item.customgunsmod.mag_cal_50_drum": "Cal .50 Drum Mag",
+    "item.customgunsmod.mag_cal_50_box": "Cal .50 Box Mag",
+    
+    "item.customgunsmod.mag_cal_12_small": "Cal .12 Small Mag",
+    "item.customgunsmod.mag_cal_12_big": "Cal .12 Big Mag",
+    "item.customgunsmod.mag_cal_12_drum": "Cal .12 Drum Mag",
+    "item.customgunsmod.mag_cal_12_box": "Cal .12 Box Mag",
     
     //Pipes
     "item.customgunsmod.pipe_cal_45": "Cal .45 Pipe",
+    "item.customgunsmod.pipe_cal_9": "Cal .9 Pipe",
+    "item.customgunsmod.pipe_cal_5_56": "Cal .5'56 Pipe",
+    "item.customgunsmod.pipe_cal_7_62": "Cal .7'62 Pipe",
+    "item.customgunsmod.pipe_cal_338": "Cal .338 Pipe",
+    "item.customgunsmod.pipe_cal_50": "Cal .50 Pipe",
+    "item.customgunsmod.pipe_cal_12": "Cal .12 Pipe",
     
     //Gun Bodies
     "item.customgunsmod.gun_body_light": "Light Gun Body",
     "item.customgunsmod.gun_body_medium": "Medium Gun Body",
     "item.customgunsmod.gun_body_heavy": "Heavy Gun Body",
     
-    //Barrels
-    "item.customgunsmod.barrel_cal_45_light": "Cal .45 Light",
-    "item.customgunsmod.barrel_cal_45_medium": "Cal .45 Medium Barrel",
-    "item.customgunsmod.barrel_cal_45_heavy": "Cal .45 Heavy Barrel",
+    //Grips
+    "item.customgunsmod.gun_grip": "Gun Grip",
     
-    //Mags
-    "item.customgunsmod.mag_cal_45_small": "Cal. 45 Small Mag",
-    "item.customgunsmod.mag_cal_45_big": "Cal. 45 Big Mag",
-    "item.customgunsmod.mag_cal_45_drum": "Cal. 45 Drum Mag",
-    "item.customgunsmod.mag_cal_45_box": "Cal. 45 Box Mag",
+    //Gun Butts
+    "item.customgunsmod.gun_butt": "Gun Butt",
     //=====================
     
     //BLOCKS

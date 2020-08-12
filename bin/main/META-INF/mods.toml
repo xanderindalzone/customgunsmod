@@ -32,7 +32,7 @@ modId="customgunsmod"
 
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 #mandatory
-version="1.1"
+version="1.3"
 
 # A display name for the mod
 #mandatory
@@ -48,7 +48,7 @@ displayURL="https://discord.gg/v5KX9ft"
 
 # A file name (in the root of the mod JAR) containing a logo for display
 #optional
-logoFile="example.png"
+logoFile="customgunsmod.png"
 
 # A text field displayed in the mod UI
 #optional

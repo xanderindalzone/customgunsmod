@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " II",
+    "IPI",
+    "II "
+  ],
+  "key": {
+    "P": {
+      "item": "customgunsmod:pipe_cal_9"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "customgunsmod:mag_cal_9_big"
+  }
+}

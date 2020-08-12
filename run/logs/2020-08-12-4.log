@@ -1,0 +1,97 @@
+[12ago2020 22:51:52.924] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20200515.085601, --fml.mcVersion, 1.15.2, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 31.2.0, --version, MOD_DEV, --assetIndex, 1.15, --assetsDir, C:\Users\alexs\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[12ago2020 22:51:52.934] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 5.1.2+70+master.2845bb9 starting: java version 1.8.0_251 by Oracle Corporation
+[12ago2020 22:51:54.704] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[12ago2020 22:51:57.693] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\alexs\.gradle\caches\forge_gradle\assets, --assetIndex, 1.15, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[12ago2020 22:52:01.523] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[12ago2020 22:52:20.361] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[12ago2020 22:52:22.095] [modloading-worker-3/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 31.2.0, for MC 1.15.2 with MCP 20200515.085601
+[12ago2020 22:52:22.095] [modloading-worker-3/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v31.2.0 Initialized
+[12ago2020 22:52:22.514] [Render thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity customgunsmod:bullet_cal_45_entity
+[12ago2020 22:52:27.860] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[12ago2020 22:52:28.006] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[12ago2020 22:52:28.218] [modloading-worker-1/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: Got game settings net.minecraft.client.GameSettings@178c2692
+[12ago2020 22:52:28.236] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [customgunsmod] Starting version check at http://example.com/
+[12ago2020 22:52:28.409] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.net.UnknownHostException: example.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.<init>(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:173) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:206) ~[?:?]
+	at java.lang.Iterable.forEach(Unknown Source) [?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:157) [?:?]
+[12ago2020 22:52:28.411] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[12ago2020 22:52:29.868] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 31.2.0 Target: null
+[12ago2020 22:52:35.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/bullet_cal_45
+[12ago2020 22:52:35.189] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/prototype_cal_45_pistol_basic
+[12ago2020 22:52:35.189] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/pistol_colt_1911
+[12ago2020 22:52:35.189] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/pistol_colt_1911_aim
+[12ago2020 22:52:35.189] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to resolve texture reference: #missing in customgunsmod:item/pistol_colt_1911_crouch
+[12ago2020 22:52:37.290] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[12ago2020 22:52:37.291] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[12ago2020 22:52:37.501] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[12ago2020 22:52:37.710] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x4 minecraft:textures/atlas/signs.png-atlas
+[12ago2020 22:52:37.711] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[12ago2020 22:52:37.712] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[12ago2020 22:52:37.713] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[12ago2020 22:52:37.714] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[12ago2020 22:52:37.714] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[12ago2020 22:52:38.459] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[12ago2020 22:52:38.461] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[12ago2020 22:52:38.462] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[12ago2020 22:52:39.939] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[12ago2020 22:52:47.915] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[12ago2020 22:52:47.917] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12ago2020 22:52:47.917] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12ago2020 22:52:47.919] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[12ago2020 22:52:47.920] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12ago2020 22:52:48.158] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.15.2
+[12ago2020 22:52:48.159] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
+[12ago2020 22:52:48.509] [Server thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this SERVER instance
+[12ago2020 22:52:48.832] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar
+[12ago2020 22:52:50.941] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 6 recipes
+[12ago2020 22:52:53.592] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 825 advancements
+[12ago2020 22:52:54.556] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[12ago2020 22:52:55.481] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12ago2020 22:52:55.481] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[12ago2020 22:52:55.798] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 12%
+[12ago2020 22:52:56.090] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: ====================================
+[12ago2020 22:52:56.091] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: Loading CustomGunsMod on the server!
+[12ago2020 22:52:56.091] [Server thread/INFO] [com.xanderindalzone.customgunsmod.CustomGunsMod/]: ====================================
+[12ago2020 22:52:56.106] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 1427 ms
+[12ago2020 22:52:56.557] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12ago2020 22:52:56.558] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12ago2020 22:52:56.563] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 19, from 10
+[12ago2020 22:52:58.089] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[12ago2020 22:52:58.227] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@78160c53
+[12ago2020 22:52:58.257] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:0d6d8226] logged in with entity id 99 at (-145.32905510267108, 4.0, -131.2630564825661)
+[12ago2020 22:52:58.317] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[12ago2020 22:53:00.703] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2471ms or 49 ticks behind
+[12ago2020 22:53:01.170] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[12ago2020 22:53:01.282] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[12ago2020 22:53:01.387] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 113 advancements
+[12ago2020 22:54:04.484] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[12ago2020 22:54:04.492] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Internal Exception: java.nio.channels.ClosedChannelException
+[12ago2020 22:54:04.493] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[12ago2020 22:54:04.513] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[12ago2020 22:54:04.556] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[12ago2020 22:54:04.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[12ago2020 22:54:04.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[12ago2020 22:54:04.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[12ago2020 22:54:05.580] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[12ago2020 22:54:05.599] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved

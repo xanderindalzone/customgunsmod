@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "PPP",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "item": "customgunsmod:pipe_cal_338"
+    }
+  },
+  "result": {
+    "item": "customgunsmod:barrel_cal_338_light"
+  }
+}

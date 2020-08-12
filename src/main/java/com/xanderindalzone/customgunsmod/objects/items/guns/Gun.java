@@ -51,9 +51,11 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.world.World;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent.LeftClickBlock;
 import net.minecraftforge.event.world.BlockEvent.EntityPlaceEvent;
 
 public class Gun extends Item
@@ -105,10 +107,20 @@ public class Gun extends Item
 	public boolean onEntitySwing(ItemStack stack, LivingEntity entity) {return true;}
 	//CANCELA GOLPES A ENTITIES
 	@Override
-	public boolean onLeftClickEntity(ItemStack stack, PlayerEntity player, Entity entity){return true;}
+	public boolean onLeftClickEntity(ItemStack stack, PlayerEntity player, Entity entity){
+		if(entity instanceof LivingEntity)
+		{
+			return true;
+		}
+		else 
+		{
+			return false;	
+		}
+	}
 	//CANCELA PODER ROMPER BLOQUES CON ESTE ITEM
 	@Override
 	public boolean canPlayerBreakBlockWhileHolding(BlockState state, World worldIn, BlockPos pos, PlayerEntity player){return false;}
+	
 	
 	@Override
 	public Multimap<String, AttributeModifier> getAttributeModifiers(EquipmentSlotType equipmentSlot) {
@@ -250,8 +262,15 @@ public class Gun extends Item
 		double desvZ = (desv-Math.random()*(desv*2));
 				
 		//ESTABLECE EL ALCANCE DE LA BALA Y LA DESVIACION
-		bullet.setVelocity(look.x*this.gun_bullet_speed+(desvX), look.y*this.gun_bullet_speed+(desvY), look.z*this.gun_bullet_speed+(desvZ));
-				
+		//bullet.setVelocity(look.x*this.gun_bullet_speed+(desvX), look.y*this.gun_bullet_speed+(desvY), look.z*this.gun_bullet_speed+(desvZ));
+		bullet.setMotion(look.x*this.gun_bullet_speed+(desvX), look.y*this.gun_bullet_speed+(desvY), look.z*this.gun_bullet_speed+(desvZ));	
+		double xF = look.x*this.gun_bullet_speed+(desvX);
+		double yF = look.y*this.gun_bullet_speed+(desvY);
+		double zF = look.z*this.gun_bullet_speed+(desvZ);
+		float f = MathHelper.sqrt(xF * xF + zF * zF);
+		bullet.rotationPitch = (float)(MathHelper.atan2(yF, (double)f) * (double)(180F / (float)Math.PI));
+		bullet.rotationYaw = (float)(MathHelper.atan2(xF, zF) * (double)(180F / (float)Math.PI));
+		
 		//ESTABLECE LA CADENCIA DEL ARMA
 		playerIn.getCooldownTracker().setCooldown(this, this.gun_firing_rate); //TICKS - 30 TICKS = 1 seg
 				
@@ -265,9 +284,9 @@ public class Gun extends Item
 		
 		double sneakModifier = 0;
 		if(playerIn.isSneaking()||playerIn.isCrouching()) {sneakModifier=0.37;}
-		double bulletXPos = posX+(look.x*1.3D);
+		double bulletXPos = posX+(look.x*0.8D);
 		double bulletYPos = posY+(look.y*1.5D)+1.6D-sneakModifier;
-		double bulletZPos = posZ+(look.z*1.3D);
+		double bulletZPos = posZ+(look.z*0.8D);
 		
 		//CONFIGURA LA ALTURA DE SALIDA DE LA BALA
 		if(playerIn.rotationPitch>60) //SI ESTA MIRANDO HACIA ABAJO
@@ -282,7 +301,6 @@ public class Gun extends Item
 		
 
 		//SPAWNEAR FOGONAZO
-		worldIn.addParticle(ParticleTypes.FLAME, bulletXPos, bulletYPos+0.1, bulletZPos, 0.0D, 0.0D, 0.0D);
 		worldIn.addParticle(ParticleTypes.CLOUD, bulletXPos, bulletYPos+0.1, bulletZPos, 0.0D, 0.5D, 0.0D);
 		worldIn.addParticle(ParticleTypes.SWEEP_ATTACK, bulletXPos, bulletYPos+0.1, bulletZPos, 0.0D, 0.0D, 0.0D);
 		
